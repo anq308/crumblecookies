@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- u0424u043eu043d -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF9E6" />
+      <stop offset="100%" stop-color="#FFE4B5" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-opacity="0.3" />
+    </filter>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2" />
+      <feOffset dx="1" dy="2" result="offsetblur" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3" />
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <radialGradient id="steamGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="white" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="white" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  
+  <rect width="400" height="300" rx="20" fill="url(#bgGradient)" />
+  
+  <!-- u0421u0442u043eu043b -->
+  <rect x="50" y="220" width="300" height="20" fill="#8B4513" />
+  
+  <!-- u0427u0430u0448u043au0430 u043au043eu0444u0435 -->
+  <path d="M250 180C250 160 270 150 280 150C290 150 310 160 310 180C310 200 290 210 280 210C270 210 250 200 250 180Z" fill="#4E342E" stroke="#3E2723" stroke-width="2" />
+  <ellipse cx="280" cy="150" rx="30" ry="10" fill="#3E2723" />
+  <ellipse cx="280" cy="150" rx="25" ry="7" fill="#5D4037" />
+  
+  <!-- u041fu0430u0440 u043du0430u0434 u043au043eu0444u0435 -->
+  <ellipse cx="280" cy="120" rx="15" ry="10" fill="url(#steamGradient)" />
+  <ellipse cx="270" cy="100" rx="10" ry="7" fill="url(#steamGradient)" />
+  <ellipse cx="290" cy="105" rx="8" ry="5" fill="url(#steamGradient)" />
+  
+  <!-- u0411u043bu044eu0434u0446u0435 -->
+  <ellipse cx="280" cy="210" rx="40" ry="10" fill="#E0E0E0" stroke="#BDBDBD" stroke-width="1" />
+  
+  <!-- u041fu0435u0447u0435u043du044cu0435 -->
+  <circle cx="120" cy="170" r="50" fill="#D2B48C" stroke="#8B4513" stroke-width="2" filter="url(#softShadow)" />
+  
+  <!-- u0428u043eu043au043eu043bu0430u0434u043du044bu0435 u0447u0438u043fu0441u044b -->
+  <circle cx="100" cy="150" r="8" fill="#5D4037" opacity="0.9" />
+  <circle cx="130" cy="140" r="7" fill="#5D4037" opacity="0.9" />
+  <circle cx="110" cy="180" r="6" fill="#5D4037" opacity="0.9" />
+  <circle cx="140" cy="170" r="7" fill="#5D4037" opacity="0.9" />
+  <circle cx="90" cy="160" r="5" fill="#5D4037" opacity="0.9" />
+  
+  <!-- u041du0430u0434u043au0443u0441u0430u043du043du043eu0435 u043fu0435u0447u0435u043du044cu0435 -->
+  <path d="M120 170a50 50 0 0 1 0-100a50 50 0 0 1 0 100z" fill="#D2B48C" stroke="#8B4513" stroke-width="2" />
+  <path d="M120 170a50 50 0 0 1 0-100a50 50 0 0 1 0 100z" fill="#D2B48C" stroke="#8B4513" stroke-width="2" />
+  <path d="M120 120v50a50 50 0 0 0 0-100a50 50 0 0 0-40 20z" fill="#C19A6B" />
+  
+  <!-- u041bu0438u043du0438u044f u0441u0432u044fu0437u0438 u043cu0435u0436u0434u0443 u043au043eu0444u0435 u0438 u043fu0435u0447u0435u043du044cu0435u043c -->
+  <path d="M170 150C200 140 230 150 250 170" stroke="#F5C107" stroke-width="3" stroke-dasharray="5 3" opacity="0.7" />
+  <circle cx="170" cy="150" r="5" fill="#F5C107" />
+  <circle cx="250" cy="170" r="5" fill="#F5C107" />
+  
+  <!-- u0421u0435u0440u0434u0435u0447u043au0438 -->
+  <path d="M200 120C195 110 185 110 180 120C175 130 180 140 190 145C200 140 205 130 200 120Z" fill="#FF6B6B" opacity="0.7" />
+  
+  <!-- u041du0430u0434u043fu0438u0441u044c -->
+  <rect x="50" y="30" width="300" height="40" rx="10" fill="#F5C107" filter="url(#shadow)" />
+  <text x="200" y="57" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white" text-anchor="middle">ИДЕАЛЬНО С КОФЕ</text>
+</svg>

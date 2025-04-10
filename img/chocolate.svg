@@ -1,0 +1,45 @@
+<svg width="350" height="250" viewBox="0 0 350 250" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="cookie-gradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#5D4037" />
+      <stop offset="100%" stop-color="#3E2723" />
+    </radialGradient>
+    <linearGradient id="chocolate-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4E342E" />
+      <stop offset="100%" stop-color="#3E2723" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="350" height="250" fill="#F5F5F5" />
+  
+  <!-- Cookie -->
+  <circle cx="175" cy="125" r="100" fill="url(#cookie-gradient)" />
+  
+  <!-- Chocolate chips -->
+  <circle cx="140" cy="90" r="12" fill="#1A1A1A" />
+  <circle cx="200" cy="100" r="10" fill="#1A1A1A" />
+  <circle cx="160" cy="150" r="11" fill="#1A1A1A" />
+  <circle cx="210" cy="160" r="9" fill="#1A1A1A" />
+  <circle cx="130" cy="130" r="8" fill="#1A1A1A" />
+  <circle cx="180" cy="80" r="10" fill="#1A1A1A" />
+  <circle cx="220" cy="130" r="11" fill="#1A1A1A" />
+  
+  <!-- Chocolate drizzle -->
+  <path d="M120,70 Q175,60 230,70 Q240,100 230,130 Q175,140 120,130 Q110,100 120,70" fill="none" stroke="#1A1A1A" stroke-width="5" stroke-dasharray="10 5" />
+  
+  <!-- Cocoa powder -->
+  <g opacity="0.6">
+    <circle cx="150" cy="110" r="3" fill="#5D4037" />
+    <circle cx="190" cy="120" r="2" fill="#5D4037" />
+    <circle cx="170" cy="140" r="4" fill="#5D4037" />
+    <circle cx="130" cy="150" r="3" fill="#5D4037" />
+    <circle cx="210" cy="140" r="2" fill="#5D4037" />
+    <circle cx="160" cy="170" r="3" fill="#5D4037" />
+    <circle cx="140" cy="190" r="2" fill="#5D4037" />
+    <circle cx="190" cy="180" r="3" fill="#5D4037" />
+  </g>
+  
+  <!-- Label -->
+  <text x="175" y="240" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#3E2723">Шоколадный экстаз</text>
+</svg>

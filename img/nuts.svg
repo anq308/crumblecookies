@@ -1,0 +1,49 @@
+<svg width="350" height="250" viewBox="0 0 350 250" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="cookie-gradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#E6D7C3" />
+      <stop offset="100%" stop-color="#D7C4A7" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="350" height="250" fill="#F5F5F5" />
+  
+  <!-- Cookie -->
+  <circle cx="175" cy="125" r="100" fill="url(#cookie-gradient)" />
+  
+  <!-- Nut pieces -->
+  <ellipse cx="140" cy="90" rx="15" ry="10" fill="#8D6E63" transform="rotate(30 140 90)" />
+  <ellipse cx="200" cy="100" rx="12" ry="8" fill="#A1887F" transform="rotate(-15 200 100)" />
+  <ellipse cx="160" cy="150" rx="14" ry="9" fill="#795548" transform="rotate(45 160 150)" />
+  <ellipse cx="210" cy="160" rx="13" ry="9" fill="#8D6E63" transform="rotate(-30 210 160)" />
+  <ellipse cx="130" cy="130" rx="11" ry="7" fill="#A1887F" transform="rotate(60 130 130)" />
+  <ellipse cx="180" cy="80" rx="13" ry="8" fill="#795548" transform="rotate(15 180 80)" />
+  <ellipse cx="220" cy="130" rx="14" ry="9" fill="#8D6E63" transform="rotate(-45 220 130)" />
+  
+  <!-- Nut texture -->
+  <g opacity="0.7">
+    <path d="M135,85 L145,95" stroke="#5D4037" stroke-width="1" />
+    <path d="M195,97 L205,103" stroke="#5D4037" stroke-width="1" />
+    <path d="M155,145 L165,155" stroke="#5D4037" stroke-width="1" />
+    <path d="M205,155 L215,165" stroke="#5D4037" stroke-width="1" />
+    <path d="M125,125 L135,135" stroke="#5D4037" stroke-width="1" />
+    <path d="M175,75 L185,85" stroke="#5D4037" stroke-width="1" />
+    <path d="M215,125 L225,135" stroke="#5D4037" stroke-width="1" />
+  </g>
+  
+  <!-- Crumbs -->
+  <g opacity="0.8">
+    <circle cx="150" cy="110" r="3" fill="#D7C4A7" />
+    <circle cx="190" cy="120" r="2" fill="#D7C4A7" />
+    <circle cx="170" cy="140" r="4" fill="#D7C4A7" />
+    <circle cx="130" cy="150" r="3" fill="#D7C4A7" />
+    <circle cx="210" cy="140" r="2" fill="#D7C4A7" />
+    <circle cx="160" cy="170" r="3" fill="#D7C4A7" />
+    <circle cx="140" cy="190" r="2" fill="#D7C4A7" />
+    <circle cx="190" cy="180" r="3" fill="#D7C4A7" />
+  </g>
+  
+  <!-- Label -->
+  <text x="175" y="240" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#795548">Ореховый джаз</text>
+</svg>

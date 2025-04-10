@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Фон -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF9E6" />
+      <stop offset="100%" stop-color="#FFE4B5" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-opacity="0.3" />
+    </filter>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2" />
+      <feOffset dx="1" dy="2" result="offsetblur" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3" />
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect width="400" height="300" rx="20" fill="url(#bgGradient)" />
+  
+  <!-- Стол -->
+  <rect x="50" y="180" width="300" height="20" fill="#8B4513" />
+  <rect x="70" y="200" width="260" height="10" fill="#A0522D" />
+  
+  <!-- Коробка -->
+  <rect x="120" y="100" width="160" height="80" fill="#F5DEB3" stroke="#D2B48C" stroke-width="2" filter="url(#softShadow)" />
+  <rect x="120" y="100" width="160" height="20" fill="#E8C39E" stroke="#D2B48C" stroke-width="1" />
+  <path d="M120 100L200 70L280 100" fill="#F5DEB3" stroke="#D2B48C" stroke-width="2" />
+  
+  <!-- Логотип на коробке -->
+  <circle cx="200" cy="140" r="25" fill="#F5C107" />
+  <text x="200" y="145" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">COOKIES</text>
+  
+  <!-- Печенье рядом с коробкой -->
+  <circle cx="80" cy="150" r="20" fill="#D2B48C" stroke="#8B4513" stroke-width="1" filter="url(#softShadow)" />
+  <circle cx="320" cy="150" r="20" fill="#D2B48C" stroke="#8B4513" stroke-width="1" filter="url(#softShadow)" />
+  
+  <!-- Руки, упаковывающие печенье -->
+  <path d="M100 160C80 170 60 190 50 210" stroke="#F5D0B0" stroke-width="10" stroke-linecap="round" />
+  <path d="M300 160C320 170 340 190 350 210" stroke="#F5D0B0" stroke-width="10" stroke-linecap="round" />
+  
+  <!-- Сердечки вокруг коробки -->
+  <path d="M110 80C105 70 95 70 90 80C85 90 90 100 100 105C110 100 115 90 110 80Z" fill="#FF6B6B" opacity="0.7" />
+  <path d="M290 80C295 70 305 70 310 80C315 90 310 100 300 105C290 100 285 90 290 80Z" fill="#FF6B6B" opacity="0.7" />
+  
+  <!-- Надпись -->
+  <rect x="50" y="30" width="300" height="40" rx="10" fill="#F5C107" filter="url(#shadow)" />
+  <text x="200" y="57" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white" text-anchor="middle">УПАКОВКА С ЛЮБОВЬЮ</text>
+</svg>
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="400" rx="20" fill="#FFF9E6"/>
+  
+  <!-- Packaging table -->
+  <rect x="50" y="250" width="300" height="20" fill="#8B4513"/>
+  <rect x="70" y="270" width="10" height="80" fill="#8B4513"/>
+  <rect x="320" y="270" width="10" height="80" fill="#8B4513"/>
+  
+  <!-- Packaging box -->
+  <rect x="120" y="150" width="160" height="100" rx="5" fill="#F5DEB3" stroke="#D2B48C" stroke-width="2"/>
+  <rect x="120" y="150" width="160" height="20" rx="5" fill="#E8C39E" stroke="#D2B48C" stroke-width="2"/>
+  <path d="M120 170H280" stroke="#D2B48C" stroke-width="2"/>
+  
+  <!-- Cookies -->
+  <circle cx="150" cy="190" r="15" fill="#D2B48C" stroke="#8B4513" stroke-width="1"/>
+  <circle cx="180" cy="190" r="15" fill="#D2B48C" stroke="#8B4513" stroke-width="1"/>
+  <circle cx="210" cy="190" r="15" fill="#D2B48C" stroke="#8B4513" stroke-width="1"/>
+  <circle cx="240" cy="190" r="15" fill="#D2B48C" stroke="#8B4513" stroke-width="1"/>
+  
+  <!-- Cookie details -->
+  <circle cx="150" cy="190" r="10" fill="#C19A6B"/>
+  <circle cx="180" cy="190" r="10" fill="#C19A6B"/>
+  <circle cx="210" cy="190" r="10" fill="#C19A6B"/>
+  <circle cx="240" cy="190" r="10" fill="#C19A6B"/>
+  
+  <!-- Chocolate chips -->
+  <circle cx="145" cy="185" r="2" fill="#3E2723"/>
+  <circle cx="155" cy="185" r="2" fill="#3E2723"/>
+  <circle cx="150" cy="195" r="2" fill="#3E2723"/>
+  
+  <circle cx="175" cy="185" r="2" fill="#3E2723"/>
+  <circle cx="185" cy="185" r="2" fill="#3E2723"/>
+  <circle cx="180" cy="195" r="2" fill="#3E2723"/>
+  
+  <circle cx="205" cy="185" r="2" fill="#3E2723"/>
+  <circle cx="215" cy="185" r="2" fill="#3E2723"/>
+  <circle cx="210" cy="195" r="2" fill="#3E2723"/>
+  
+  <circle cx="235" cy="185" r="2" fill="#3E2723"/>
+  <circle cx="245" cy="185" r="2" fill="#3E2723"/>
+  <circle cx="240" cy="195" r="2" fill="#3E2723"/>
+  
+  <!-- Packaging materials -->
+  <rect x="60" y="200" width="40" height="50" fill="#F5F5F5" stroke="#E0E0E0" stroke-width="1"/> <!-- Tissue paper -->
+  <rect x="300" y="200" width="40" height="30" fill="#8B4513" stroke="#5D4037" stroke-width="1"/> <!-- Ribbon -->
+  
+  <!-- Hands packaging -->
+  <path d="M100 140C120 120 140 110 160 120" stroke="#E8C39E" stroke-width="15" stroke-linecap="round"/>
+  <path d="M300 140C280 120 260 110 240 120" stroke="#E8C39E" stroke-width="15" stroke-linecap="round"/>
+  
+  <!-- Heart symbol -->
+  <path d="M200 120C210 110 220 110 225 120C230 130 220 140 200 150C180 140 170 130 175 120C180 110 190 110 200 120Z" fill="#FF6B6B" opacity="0.8"/>
+</svg>

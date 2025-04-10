@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Фон -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF9E6" />
+      <stop offset="100%" stop-color="#FFE4B5" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-opacity="0.3" />
+    </filter>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2" />
+      <feOffset dx="1" dy="2" result="offsetblur" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3" />
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <radialGradient id="steamGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="white" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="white" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  
+  <rect width="400" height="300" rx="20" fill="url(#bgGradient)" />
+  
+  <!-- Стол -->
+  <rect x="50" y="220" width="300" height="20" fill="#8B4513" />
+  
+  <!-- Чашка кофе -->
+  <path d="M250 180C250 160 270 150 280 150C290 150 310 160 310 180C310 200 290 210 280 210C270 210 250 200 250 180Z" fill="#4E342E" stroke="#3E2723" stroke-width="2" />
+  <ellipse cx="280" cy="150" rx="30" ry="10" fill="#3E2723" />
+  <ellipse cx="280" cy="150" rx="25" ry="7" fill="#5D4037" />
+  
+  <!-- Пар над кофе -->
+  <ellipse cx="280" cy="120" rx="15" ry="10" fill="url(#steamGradient)" />
+  <ellipse cx="270" cy="100" rx="10" ry="7" fill="url(#steamGradient)" />
+  <ellipse cx="290" cy="105" rx="8" ry="5" fill="url(#steamGradient)" />
+  
+  <!-- Блюдце -->
+  <ellipse cx="280" cy="210" rx="40" ry="10" fill="#E0E0E0" stroke="#BDBDBD" stroke-width="1" />
+  
+  <!-- Печенье -->
+  <circle cx="120" cy="170" r="50" fill="#D2B48C" stroke="#8B4513" stroke-width="2" filter="url(#softShadow)" />
+  
+  <!-- Шоколадные чипсы -->
+  <circle cx="100" cy="150" r="8" fill="#5D4037" opacity="0.9" />
+  <circle cx="130" cy="140" r="7" fill="#5D4037" opacity="0.9" />
+  <circle cx="110" cy="180" r="6" fill="#5D4037" opacity="0.9" />
+  <circle cx="140" cy="170" r="7" fill="#5D4037" opacity="0.9" />
+  <circle cx="90" cy="160" r="5" fill="#5D4037" opacity="0.9" />
+  
+  <!-- Надкусанное печенье -->
+  <path d="M120 170a50 50 0 0 1 0-100a50 50 0 0 1 0 100z" fill="#D2B48C" stroke="#8B4513" stroke-width="2" />
+  <path d="M120 170a50 50 0 0 1 0-100a50 50 0 0 1 0 100z" fill="#D2B48C" stroke="#8B4513" stroke-width="2" />
+  <path d="M120 120v50a50 50 0 0 0 0-100a50 50 0 0 0-40 20z" fill="#C19A6B" />
+  
+  <!-- Линия связи между кофе и печеньем -->
+  <path d="M170 150C200 140 230 150 250 170" stroke="#F5C107" stroke-width="3" stroke-dasharray="5 3" opacity="0.7" />
+  <circle cx="170" cy="150" r="5" fill="#F5C107" />
+  <circle cx="250" cy="170" r="5" fill="#F5C107" />
+  
+  <!-- Сердечки -->
+  <path d="M200 120C195 110 185 110 180 120C175 130 180 140 190 145C200 140 205 130 200 120Z" fill="#FF6B6B" opacity="0.7" />
+  
+  <!-- Надпись -->
+  <rect x="50" y="30" width="300" height="40" rx="10" fill="#F5C107" filter="url(#shadow)" />
+  <text x="200" y="57" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white" text-anchor="middle">ИДЕАЛЬНО С КОФЕ</text>
+</svg>
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="400" rx="20" fill="#FFF9E6"/>
+  
+  <!-- Coffee cup -->
+  <path d="M240 150H300C310 150 320 160 320 170V180C320 190 310 200 300 200H290C290 240 260 270 220 270C180 270 150 240 150 200H140C130 200 120 190 120 180V170C120 160 130 150 140 150H200" fill="#FFFFFF" stroke="#BDBDBD" stroke-width="3"/>
+  <path d="M150 150V130C150 120 160 110 170 110H270C280 110 290 120 290 130V150" stroke="#BDBDBD" stroke-width="3"/>
+  
+  <!-- Coffee -->
+  <path d="M160 160C160 160 170 180 220 180C270 180 280 160 280 160V200C280 230 255 255 220 255C185 255 160 230 160 200V160Z" fill="#8B4513" opacity="0.8"/>
+  
+  <!-- Steam -->
+  <path d="M200 110C210 100 220 100 230 110C240 120 250 120 260 110" stroke="#BDBDBD" stroke-width="2" stroke-dasharray="2 2" opacity="0.5">
+    <animate attributeName="opacity" values="0.5;0.2;0.5" dur="3s" repeatCount="indefinite"/>
+  </path>
+  <path d="M180 90C190 80 200 80 210 90C220 100 230 100 240 90" stroke="#BDBDBD" stroke-width="2" stroke-dasharray="2 2" opacity="0.5">
+    <animate attributeName="opacity" values="0.5;0.2;0.5" dur="4s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Cookies on plate -->
+  <ellipse cx="120" cy="280" rx="60" ry="20" fill="#F5F5F5" stroke="#E0E0E0" stroke-width="2"/>
+  
+  <!-- Cookies -->
+  <circle cx="100" cy="275" r="15" fill="#D2B48C" stroke="#8B4513" stroke-width="1"/>
+  <circle cx="130" cy="275" r="15" fill="#D2B48C" stroke="#8B4513" stroke-width="1"/>
+  <circle cx="115" cy="255" r="15" fill="#D2B48C" stroke="#8B4513" stroke-width="1"/>
+  
+  <!-- Cookie details -->
+  <circle cx="100" cy="275" r="10" fill="#C19A6B"/>
+  <circle cx="130" cy="275" r="10" fill="#C19A6B"/>
+  <circle cx="115" cy="255" r="10" fill="#C19A6B"/>
+  
+  <!-- Chocolate chips -->
+  <circle cx="95" cy="270" r="2" fill="#3E2723"/>
+  <circle cx="105" cy="270" r="2" fill="#3E2723"/>
+  <circle cx="100" cy="280" r="2" fill="#3E2723"/>
+  
+  <circle cx="125" cy="270" r="2" fill="#3E2723"/>
+  <circle cx="135" cy="270" r="2" fill="#3E2723"/>
+  <circle cx="130" cy="280" r="2" fill="#3E2723"/>
+  
+  <circle cx="110" cy="250" r="2" fill="#3E2723"/>
+  <circle cx="120" cy="250" r="2" fill="#3E2723"/>
+  <circle cx="115" cy="260" r="2" fill="#3E2723"/>
+  
+  <!-- Table -->
+  <rect x="50" y="300" width="300" height="20" fill="#8B4513"/>
+  <rect x="70" y="320" width="10" height="80" fill="#8B4513"/>
+  <rect x="320" y="320" width="10" height="80" fill="#8B4513"/>
+</svg>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600" height="400" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with gradient -->
+  <rect width="600" height="400" rx="20" fill="url(#paint0_linear)"/>
+  
+  <!-- Packaging table -->
+  <rect x="100" y="250" width="400" height="20" rx="5" fill="#8B4513" stroke="#5D2906" stroke-width="2"/>
+  
+  <!-- Gift box -->
+  <rect x="200" y="150" width="200" height="100" rx="10" fill="#F5C107" stroke="#D4A017" stroke-width="3"/>
+  <rect x="190" y="140" width="220" height="20" rx="5" fill="#F5C107" stroke="#D4A017" stroke-width="3"/>
+  <path d="M300 140V250" stroke="#D4A017" stroke-width="3" stroke-dasharray="5 5"/>
+  <path d="M200 200H400" stroke="#D4A017" stroke-width="3" stroke-dasharray="5 5"/>
+  
+  <!-- Ribbon -->
+  <path d="M290 140C290 120 280 110 270 110C260 110 250 120 250 140" stroke="#FF5722" stroke-width="5" stroke-linecap="round"/>
+  <path d="M310 140C310 120 320 110 330 110C340 110 350 120 350 140" stroke="#FF5722" stroke-width="5" stroke-linecap="round"/>
+  <rect x="285" y="110" width="30" height="140" fill="#FF5722" stroke="#E64A19" stroke-width="2"/>
+  
+  <!-- Cookies visible in box -->
+  <circle cx="250" cy="180" r="15" fill="#C19A6B" stroke="#8B4513" stroke-width="1"/>
+  <circle cx="350" cy="180" r="15" fill="#C19A6B" stroke="#8B4513" stroke-width="1"/>
+  <circle cx="250" cy="220" r="15" fill="#C19A6B" stroke="#8B4513" stroke-width="1"/>
+  <circle cx="350" cy="220" r="15" fill="#C19A6B" stroke="#8B4513" stroke-width="1"/>
+  
+  <!-- Hands packaging -->
+  <path d="M150 200C130 190 120 170 130 150C140 130 160 120 180 130" stroke="#F9D6C2" stroke-width="8" stroke-linecap="round"/>
+  <path d="M450 200C470 190 480 170 470 150C460 130 440 120 420 130" stroke="#F9D6C2" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- Hearts floating -->
+  <path d="M180 100C190 90 200 90 210 100C220 90 230 90 240 100C240 110 230 120 220 130C210 120 200 110 200 100" fill="#FF5252" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;0.3;0.6" dur="3s" repeatCount="indefinite" />
+    <animate attributeName="transform" type="translate" values="0,0; 0,-10; 0,0" dur="3s" repeatCount="indefinite" />
+  </path>
+  
+  <path d="M380 120C390 110 400 110 410 120C420 110 430 110 440 120C440 130 430 140 420 150C410 140 400 130 400 120" fill="#FF5252" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;0.3;0.6" dur="2.5s" repeatCount="indefinite" />
+    <animate attributeName="transform" type="translate" values="0,0; 0,-8; 0,0" dur="2.5s" repeatCount="indefinite" />
+  </path>
+  
+  <!-- Decorative elements -->
+  <path d="M100 100C120 80 150 70 180 80C210 90 220 120 200 140" stroke="#F5C107" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+  <path d="M500 120C480 100 450 90 420 100C390 110 380 140 400 160" stroke="#F5C107" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+  
+  <!-- Title -->
+  <text x="300" y="50" font-family="Pacifico, cursive" font-size="28" text-anchor="middle" fill="#3C2F2F">u0423u043fu0430u043au043eu0432u043au0430 u0441 u043bu044eu0431u043eu0432u044cu044e</text>
+  <text x="300" y="80" font-family="Montserrat, sans-serif" font-size="16" text-anchor="middle" fill="#555555">u041au0430u0436u0434u0430u044f u043au043eu0440u043eu0431u043eu0447u043au0430 - u044du0442u043e u043fu043eu0434u0430u0440u043eu043a u0441 u0437u0430u0431u043eu0442u043eu0439</text>
+  
+  <!-- Gradient definition -->
+  <defs>
+    <linearGradient id="paint0_linear" x1="0" y1="0" x2="600" y2="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFF9E6"/>
+      <stop offset="1" stop-color="#FCF0D0"/>
+    </linearGradient>
+  </defs>
+</svg>

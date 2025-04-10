@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#FFF9E6" rx="20" />
+  
+  <!-- Bowl -->
+  <ellipse cx="200" cy="180" rx="120" ry="60" fill="#E6E6E6" stroke="#CCCCCC" stroke-width="2" />
+  <ellipse cx="200" cy="180" rx="100" ry="50" fill="#F5F5F5" />
+  
+  <!-- Dough -->
+  <ellipse cx="200" cy="170" rx="90" ry="40" fill="#E6C88A" />
+  
+  <!-- Hand with whisk -->
+  <path d="M300 100C320 80 340 70 350 90C330 130 320 150 300 160" fill="#F5D0B0" stroke="#D2A679" stroke-width="2" />
+  <path d="M300 160L250 170" stroke="#999999" stroke-width="3" />
+  
+  <!-- Title -->
+  <rect x="50" y="30" width="300" height="40" rx="10" fill="#F5C107" />
+  <text x="200" y="57" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white" text-anchor="middle">ЗАМЕШИВАНИЕ ТЕСТА</text>
+</svg>

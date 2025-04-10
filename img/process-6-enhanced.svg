@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600" height="400" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with gradient -->
+  <rect width="600" height="400" rx="20" fill="url(#paint0_linear)"/>
+  
+  <!-- Happy customer illustration -->
+  <!-- Person 1 -->
+  <circle cx="250" cy="180" r="40" fill="#F9D6C2" stroke="#E6C3AF" stroke-width="2"/> <!-- Face -->
+  <circle cx="235" cy="170" r="5" fill="#3C2F2F"/> <!-- Left eye -->
+  <circle cx="265" cy="170" r="5" fill="#3C2F2F"/> <!-- Right eye -->
+  <path d="M235 190C240 200 260 200 265 190" stroke="#3C2F2F" stroke-width="2" stroke-linecap="round"/> <!-- Smile -->
+  
+  <!-- Person 2 -->
+  <circle cx="350" cy="180" r="40" fill="#F9D6C2" stroke="#E6C3AF" stroke-width="2"/> <!-- Face -->
+  <circle cx="335" cy="170" r="5" fill="#3C2F2F"/> <!-- Left eye -->
+  <circle cx="365" cy="170" r="5" fill="#3C2F2F"/> <!-- Right eye -->
+  <path d="M335 190C340 200 360 200 365 190" stroke="#3C2F2F" stroke-width="2" stroke-linecap="round"/> <!-- Smile -->
+  
+  <!-- Cookie box -->
+  <rect x="275" y="240" width="50" height="60" rx="5" fill="#F5C107" stroke="#D4A017" stroke-width="2"/>
+  <rect x="270" y="235" width="60" height="10" rx="2" fill="#F5C107" stroke="#D4A017" stroke-width="2"/>
+  <path d="M300 235V300" stroke="#D4A017" stroke-width="1" stroke-dasharray="3 3"/>
+  
+  <!-- Cookies visible in box -->
+  <circle cx="287" cy="255" r="7" fill="#C19A6B" stroke="#8B4513" stroke-width="1"/>
+  <circle cx="313" cy="255" r="7" fill="#C19A6B" stroke="#8B4513" stroke-width="1"/>
+  
+  <!-- Arms/hands reaching for cookies -->
+  <path d="M220 220C230 230 240 240 250 250C260 260 270 270 275 280" stroke="#F9D6C2" stroke-width="8" stroke-linecap="round"/>
+  <path d="M380 220C370 230 360 240 350 250C340 260 330 270 325 280" stroke="#F9D6C2" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- Speech bubbles -->
+  <path d="M200 120C180 120 170 110 170 100C170 90 180 80 200 80C220 80 240 80 260 80C280 80 290 90 290 100C290 110 280 120 260 120C240 120 220 120 200 120Z" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="2"/>
+  <path d="M200 120L190 140" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="2"/>
+  
+  <path d="M400 120C420 120 430 110 430 100C430 90 420 80 400 80C380 80 360 80 340 80C320 80 310 90 310 100C310 110 320 120 340 120C360 120 380 120 400 120Z" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="2"/>
+  <path d="M400 120L410 140" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="2"/>
+  
+  <!-- Speech bubble text -->
+  <text x="230" y="100" font-family="Montserrat, sans-serif" font-size="12" text-anchor="middle" fill="#3C2F2F">Восхитительно!</text>
+  <text x="370" y="100" font-family="Montserrat, sans-serif" font-size="12" text-anchor="middle" fill="#3C2F2F">Хочу ещё!</text>
+  
+  <!-- Hearts floating -->
+  <path d="M220 60C230 50 240 50 250 60C260 50 270 50 280 60C280 70 270 80 260 90C250 80 240 70 240 60" fill="#FF5252" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;0.3;0.6" dur="3s" repeatCount="indefinite" />
+    <animate attributeName="transform" type="translate" values="0,0; 0,-10; 0,0" dur="3s" repeatCount="indefinite" />
+  </path>
+  
+  <path d="M320 60C330 50 340 50 350 60C360 50 370 50 380 60C380 70 370 80 360 90C350 80 340 70 340 60" fill="#FF5252" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;0.3;0.6" dur="2.5s" repeatCount="indefinite" />
+    <animate attributeName="transform" type="translate" values="0,0; 0,-8; 0,0" dur="2.5s" repeatCount="indefinite" />
+  </path>
+  
+  <!-- Stars/sparkles -->
+  <path d="M180 50L185 60L195 62L185 70L187 80L180 75L173 80L175 70L165 62L175 60L180 50Z" fill="#FFD700" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.4;0.8" dur="2s" repeatCount="indefinite" />
+  </path>
+  
+  <path d="M420 50L425 60L435 62L425 70L427 80L420 75L413 80L415 70L405 62L415 60L420 50Z" fill="#FFD700" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.4;0.8" dur="1.8s" repeatCount="indefinite" />
+  </path>
+  
+  <!-- Decorative elements -->
+  <path d="M100 100C120 80 150 70 180 80C210 90 220 120 200 140" stroke="#F5C107" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+  <path d="M500 120C480 100 450 90 420 100C390 110 380 140 400 160" stroke="#F5C107" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+  
+  <!-- Rating stars at bottom -->
+  <path d="M250 330L255 340L265 342L255 350L257 360L250 355L243 360L245 350L235 342L245 340L250 330Z" fill="#FFD700"/>
+  <path d="M280 330L285 340L295 342L285 350L287 360L280 355L273 360L275 350L265 342L275 340L280 330Z" fill="#FFD700"/>
+  <path d="M310 330L315 340L325 342L315 350L317 360L310 355L303 360L305 350L295 342L305 340L310 330Z" fill="#FFD700"/>
+  <path d="M340 330L345 340L355 342L345 350L347 360L340 355L333 360L335 350L325 342L335 340L340 330Z" fill="#FFD700"/>
+  <path d="M370 330L375 340L385 342L375 350L377 360L370 355L363 360L365 350L355 342L365 340L370 330Z" fill="#FFD700"/>
+  
+  <!-- Title -->
+  <text x="300" y="50" font-family="Pacifico, cursive" font-size="28" text-anchor="middle" fill="#3C2F2F">Счастливые клиенты</text>
+  <text x="300" y="80" font-family="Montserrat, sans-serif" font-size="16" text-anchor="middle" fill="#555555">Наше печенье дарит радость и улыбки</text>
+  
+  <!-- Gradient definition -->
+  <defs>
+    <linearGradient id="paint0_linear" x1="0" y1="0" x2="600" y2="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFF9E6"/>
+      <stop offset="1" stop-color="#FCF0D0"/>
+    </linearGradient>
+  </defs>
+</svg>

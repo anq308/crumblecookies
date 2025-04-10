@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <defs>
+    <radialGradient id="berryGradient1" cx="50%" cy="50%" r="50%" fx="40%" fy="40%">
+      <stop offset="0%" stop-color="#FF5252" />
+      <stop offset="100%" stop-color="#D32F2F" />
+    </radialGradient>
+    <radialGradient id="berryGradient2" cx="50%" cy="50%" r="50%" fx="40%" fy="40%">
+      <stop offset="0%" stop-color="#7B1FA2" />
+      <stop offset="100%" stop-color="#4A148C" />
+    </radialGradient>
+    <radialGradient id="berryGradient3" cx="50%" cy="50%" r="50%" fx="40%" fy="40%">
+      <stop offset="0%" stop-color="#1E88E5" />
+      <stop offset="100%" stop-color="#0D47A1" />
+    </radialGradient>
+    <filter id="berryShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-opacity="0.3" flood-color="#000" />
+    </filter>
+  </defs>
+  
+  <!-- Клубника -->
+  <g filter="url(#berryShadow)">
+    <ellipse cx="60" cy="70" rx="15" ry="18" fill="url(#berryGradient1)" />
+    <path d="M60 52 L65 60 L55 60 Z" fill="#4CAF50" />
+    <circle cx="55" cy="65" r="2" fill="#FFEB3B" />
+    <circle cx="65" cy="65" r="2" fill="#FFEB3B" />
+    <circle cx="60" cy="75" r="2" fill="#FFEB3B" />
+  </g>
+  
+  <!-- Черника -->
+  <g filter="url(#berryShadow)">
+    <circle cx="100" cy="80" r="12" fill="url(#berryGradient2)" />
+    <path d="M100 68 L103 72 L97 72 Z" fill="#4CAF50" />
+    <circle cx="100" cy="80" r="6" fill="#7B1FA2" opacity="0.3" />
+  </g>
+  
+  <!-- Голубика -->
+  <g filter="url(#berryShadow)">
+    <circle cx="130" cy="65" r="10" fill="url(#berryGradient3)" />
+    <path d="M130 55 L133 59 L127 59 Z" fill="#4CAF50" />
+    <circle cx="130" cy="65" r="5" fill="#1E88E5" opacity="0.3" />
+  </g>
+  
+  <!-- Малина -->
+  <g filter="url(#berryShadow)">
+    <path d="M160 75 C150 65 150 85 160 75 Z" fill="#E53935" />
+    <path d="M170 75 C180 65 180 85 170 75 Z" fill="#E53935" />
+    <path d="M165 65 C155 55 175 55 165 65 Z" fill="#E53935" />
+    <path d="M165 85 C155 95 175 95 165 85 Z" fill="#E53935" />
+    <circle cx="165" cy="75" r="8" fill="#E53935" />
+    <path d="M165 60 L168 65 L162 65 Z" fill="#4CAF50" />
+  </g>
+  
+  <!-- Дополнительные ягоды -->
+  <g filter="url(#berryShadow)">
+    <circle cx="80" cy="110" r="8" fill="url(#berryGradient3)" />
+    <circle cx="120" cy="115" r="10" fill="url(#berryGradient1)" />
+    <circle cx="150" cy="105" r="7" fill="url(#berryGradient2)" />
+  </g>
+</svg>

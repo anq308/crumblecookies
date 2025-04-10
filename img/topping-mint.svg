@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="mintGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#66BB6A" />
+      <stop offset="100%" stop-color="#43A047" />
+    </linearGradient>
+    <filter id="mintShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-opacity="0.3" flood-color="#000" />
+    </filter>
+  </defs>
+  
+  <!-- u041cu044fu0442u043du044bu0435 u043bu0438u0441u0442u043eu0447u043au0438 -->
+  <g filter="url(#mintShadow)">
+    <path d="M70 60 C60 50 80 40 90 60 C100 80 80 90 70 80 C60 70 60 70 70 60 Z" fill="url(#mintGradient)" />
+    <path d="M70 60 C60 50 80 40 90 60 C100 80 80 90 70 80 C60 70 60 70 70 60 Z" stroke="#2E7D32" stroke-width="1" fill-opacity="0.9" />
+    <path d="M80 60 L80 80" stroke="#2E7D32" stroke-width="1" />
+  </g>
+  
+  <g filter="url(#mintShadow)">
+    <path d="M120 70 C110 60 130 50 140 70 C150 90 130 100 120 90 C110 80 110 80 120 70 Z" fill="url(#mintGradient)" />
+    <path d="M120 70 C110 60 130 50 140 70 C150 90 130 100 120 90 C110 80 110 80 120 70 Z" stroke="#2E7D32" stroke-width="1" fill-opacity="0.9" />
+    <path d="M130 70 L130 90" stroke="#2E7D32" stroke-width="1" />
+  </g>
+  
+  <g filter="url(#mintShadow)">
+    <path d="M90 110 C80 100 100 90 110 110 C120 130 100 140 90 130 C80 120 80 120 90 110 Z" fill="url(#mintGradient)" />
+    <path d="M90 110 C80 100 100 90 110 110 C120 130 100 140 90 130 C80 120 80 120 90 110 Z" stroke="#2E7D32" stroke-width="1" fill-opacity="0.9" />
+    <path d="M100 110 L100 130" stroke="#2E7D32" stroke-width="1" />
+  </g>
+  
+  <g filter="url(#mintShadow)">
+    <path d="M140 110 C130 100 150 90 160 110 C170 130 150 140 140 130 C130 120 130 120 140 110 Z" fill="url(#mintGradient)" />
+    <path d="M140 110 C130 100 150 90 160 110 C170 130 150 140 140 130 C130 120 130 120 140 110 Z" stroke="#2E7D32" stroke-width="1" fill-opacity="0.9" />
+    <path d="M150 110 L150 130" stroke="#2E7D32" stroke-width="1" />
+  </g>
+  
+  <!-- u041cu0430u043bu0435u043du044cu043au0438u0435 u043au0443u0441u043eu0447u043au0438 u0448u043eu043au043eu043bu0430u0434u0430 -->
+  <g filter="url(#mintShadow)">
+    <circle cx="75" cy="70" r="5" fill="#5D4037" />
+    <circle cx="125" cy="80" r="4" fill="#5D4037" />
+    <circle cx="95" cy="120" r="4.5" fill="#5D4037" />
+    <circle cx="145" cy="120" r="4" fill="#5D4037" />
+  </g>
+</svg>

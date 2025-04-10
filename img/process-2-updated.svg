@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- u0424u043eu043d -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF9E6" />
+      <stop offset="100%" stop-color="#FFE4B5" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-opacity="0.3" />
+    </filter>
+    <linearGradient id="ovenGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#666666" />
+      <stop offset="100%" stop-color="#333333" />
+    </linearGradient>
+    <radialGradient id="heatGlow" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#FF6600" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#FF6600" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  
+  <rect width="400" height="300" rx="20" fill="url(#bgGradient)" />
+  
+  <!-- u0414u0443u0445u043eu0432u043au0430 -->
+  <rect x="50" y="70" width="300" height="180" rx="10" fill="url(#ovenGradient)" stroke="#222222" stroke-width="3" />
+  
+  <!-- u0421u0442u0435u043au043bu043e u0434u0443u0445u043eu0432u043au0438 -->
+  <rect x="80" y="90" width="240" height="120" rx="5" fill="#222222" stroke="#444444" stroke-width="2" />
+  <rect x="85" y="95" width="230" height="110" rx="3" fill="#111111" />
+  
+  <!-- u0421u0432u0435u0447u0435u043du0438u0435 u0432u043du0443u0442u0440u0438 u0434u0443u0445u043eu0432u043au0438 -->
+  <rect x="90" y="100" width="220" height="100" rx="2" fill="#FF3300" opacity="0.1" />
+  <ellipse cx="200" cy="150" rx="100" ry="40" fill="url(#heatGlow)" />
+  
+  <!-- u041fu0440u043eu0442u0438u0432u0435u043du044c u0441 u043fu0435u0447u0435u043du044cu0435u043c -->
+  <rect x="100" y="130" width="200" height="10" fill="#777777" stroke="#555555" stroke-width="1" />
+  
+  <!-- u041fu0435u0447u0435u043du044cu0435 u043du0430 u043fu0440u043eu0442u0438u0432u043du0435 -->
+  <circle cx="130" cy="125" r="15" fill="#D2B48C" stroke="#8B4513" stroke-width="1" />
+  <circle cx="170" cy="125" r="15" fill="#D2B48C" stroke="#8B4513" stroke-width="1" />
+  <circle cx="210" cy="125" r="15" fill="#D2B48C" stroke="#8B4513" stroke-width="1" />
+  <circle cx="250" cy="125" r="15" fill="#D2B48C" stroke="#8B4513" stroke-width="1" />
+  
+  <!-- u0420u0443u0447u043au0438 u0438 u044du043bu0435u043cu0435u043du0442u044b u0443u043fu0440u0430u0432u043bu0435u043du0438u044f -->
+  <circle cx="200" cy="220" r="10" fill="#CCCCCC" stroke="#999999" stroke-width="1" />
+  <circle cx="240" cy="220" r="10" fill="#CCCCCC" stroke="#999999" stroke-width="1" />
+  <circle cx="160" cy="220" r="10" fill="#CCCCCC" stroke="#999999" stroke-width="1" />
+  
+  <!-- u041du0430u0434u043fu0438u0441u044c -->
+  <rect x="50" y="30" width="300" height="40" rx="10" fill="#F5C107" filter="url(#shadow)" />
+  <text x="200" y="57" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white" text-anchor="middle">ВЫПЕЧКА В ДУХОВКЕ</text>
+</svg>

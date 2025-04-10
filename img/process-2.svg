@@ -1,0 +1,90 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="oven-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9E9E9E" />
+      <stop offset="100%" stop-color="#757575" />
+    </linearGradient>
+    <linearGradient id="cookie-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5E9D6" />
+      <stop offset="100%" stop-color="#E6D7C3" />
+    </linearGradient>
+    <linearGradient id="tray-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E0E0E0" />
+      <stop offset="100%" stop-color="#BDBDBD" />
+    </linearGradient>
+    <radialGradient id="heat-gradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#FF5722" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#FF5722" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="400" fill="#F5F5F5" />
+  
+  <!-- Oven exterior -->
+  <rect x="100" y="50" width="400" height="300" rx="10" fill="url(#oven-gradient)" />
+  
+  <!-- Oven door -->
+  <rect x="150" y="100" width="300" height="200" rx="5" fill="#424242" stroke="#212121" stroke-width="2" />
+  
+  <!-- Oven window -->
+  <rect x="170" y="120" width="260" height="160" rx="5" fill="#BDBDBD" opacity="0.3" />
+  
+  <!-- Oven handle -->
+  <rect x="440" y="180" width="20" height="40" rx="5" fill="#212121" />
+  
+  <!-- Oven controls -->
+  <circle cx="300" cy="75" r="10" fill="#212121" />
+  <circle cx="340" cy="75" r="10" fill="#212121" />
+  <circle cx="380" cy="75" r="10" fill="#212121" />
+  
+  <!-- Baking tray -->
+  <rect x="180" y="180" width="240" height="80" rx="5" fill="url(#tray-gradient)" />
+  
+  <!-- Cookies on tray -->
+  <circle cx="210" cy="200" r="15" fill="url(#cookie-gradient)" />
+  <circle cx="250" cy="200" r="15" fill="url(#cookie-gradient)" />
+  <circle cx="290" cy="200" r="15" fill="url(#cookie-gradient)" />
+  <circle cx="330" cy="200" r="15" fill="url(#cookie-gradient)" />
+  <circle cx="370" cy="200" r="15" fill="url(#cookie-gradient)" />
+  
+  <circle cx="210" cy="240" r="15" fill="url(#cookie-gradient)" />
+  <circle cx="250" cy="240" r="15" fill="url(#cookie-gradient)" />
+  <circle cx="290" cy="240" r="15" fill="url(#cookie-gradient)" />
+  <circle cx="330" cy="240" r="15" fill="url(#cookie-gradient)" />
+  <circle cx="370" cy="240" r="15" fill="url(#cookie-gradient)" />
+  
+  <!-- Heat waves -->
+  <rect x="180" y="160" width="240" height="120" fill="url(#heat-gradient)" />
+  
+  <!-- Chocolate chips and details on cookies -->
+  <g opacity="0.8">
+    <!-- Row 1 -->
+    <circle cx="205" cy="195" r="2" fill="#5D4037" />
+    <circle cx="215" cy="205" r="2" fill="#5D4037" />
+    <circle cx="245" cy="195" r="2" fill="#5D4037" />
+    <circle cx="255" cy="205" r="2" fill="#5D4037" />
+    <circle cx="285" cy="195" r="2" fill="#5D4037" />
+    <circle cx="295" cy="205" r="2" fill="#5D4037" />
+    <circle cx="325" cy="195" r="2" fill="#5D4037" />
+    <circle cx="335" cy="205" r="2" fill="#5D4037" />
+    <circle cx="365" cy="195" r="2" fill="#5D4037" />
+    <circle cx="375" cy="205" r="2" fill="#5D4037" />
+    
+    <!-- Row 2 -->
+    <circle cx="205" cy="235" r="2" fill="#5D4037" />
+    <circle cx="215" cy="245" r="2" fill="#5D4037" />
+    <circle cx="245" cy="235" r="2" fill="#5D4037" />
+    <circle cx="255" cy="245" r="2" fill="#5D4037" />
+    <circle cx="285" cy="235" r="2" fill="#5D4037" />
+    <circle cx="295" cy="245" r="2" fill="#5D4037" />
+    <circle cx="325" cy="235" r="2" fill="#5D4037" />
+    <circle cx="335" cy="245" r="2" fill="#5D4037" />
+    <circle cx="365" cy="235" r="2" fill="#5D4037" />
+    <circle cx="375" cy="245" r="2" fill="#5D4037" />
+  </g>
+  
+  <!-- Timer display -->
+  <rect x="220" cy="75" width="60" height="20" rx="2" fill="#212121" />
+  <text x="250" y="90" font-family="monospace" font-size="16" text-anchor="middle" fill="#FF5722">12:45</text>
+</svg>

@@ -1,0 +1,22 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <!-- u041au043eu0440u0438u0446u0430 -->
+    <path d="M60,80 C70,70 80,75 85,85 C90,95 85,105 75,110 C65,115 55,110 50,100 C45,90 50,85 60,80 Z" fill="#A0522D" opacity="0.7"/>
+    <path d="M100,60 C110,50 120,55 125,65 C130,75 125,85 115,90 C105,95 95,90 90,80 C85,70 90,65 100,60 Z" fill="#8B4513" opacity="0.7"/>
+    <path d="M140,70 C150,60 160,65 165,75 C170,85 165,95 155,100 C145,105 135,100 130,90 C125,80 130,75 140,70 Z" fill="#A0522D" opacity="0.7"/>
+    <path d="M80,120 C90,110 100,115 105,125 C110,135 105,145 95,150 C85,155 75,150 70,140 C65,130 70,125 80,120 Z" fill="#8B4513" opacity="0.7"/>
+    <path d="M120,130 C130,120 140,125 145,135 C150,145 145,155 135,160 C125,165 115,160 110,150 C105,140 110,135 120,130 Z" fill="#A0522D" opacity="0.7"/>
+    <!-- u041cu0435u043bu043au0438u0435 u043au0440u0443u043fu0438u043du043au0438 u043au043eu0440u0438u0446u044b -->
+    <circle cx="50" cy="60" r="3" fill="#8B4513" opacity="0.8"/>
+    <circle cx="70" cy="50" r="2" fill="#A0522D" opacity="0.8"/>
+    <circle cx="90" cy="40" r="3" fill="#8B4513" opacity="0.8"/>
+    <circle cx="110" cy="50" r="2" fill="#A0522D" opacity="0.8"/>
+    <circle cx="130" cy="40" r="3" fill="#8B4513" opacity="0.8"/>
+    <circle cx="150" cy="50" r="2" fill="#A0522D" opacity="0.8"/>
+    <circle cx="170" cy="60" r="3" fill="#8B4513" opacity="0.8"/>
+    <circle cx="40" cy="100" r="2" fill="#A0522D" opacity="0.8"/>
+    <circle cx="60" cy="140" r="3" fill="#8B4513" opacity="0.8"/>
+    <circle cx="160" cy="120" r="2" fill="#A0522D" opacity="0.8"/>
+    <circle cx="140" cy="150" r="3" fill="#8B4513" opacity="0.8"/>
+  </g>
+</svg>

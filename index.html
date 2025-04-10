@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Купите свежее печенье Крамблкукис: натуральные ингредиенты, уникальные вкусы, доставка за 24 часа.">
+    <meta name="keywords" content="крамблкукис, печенье ручной работы, купить выпечку, доставка печенья">
+    <title>Крамблкукис — Artisan-печенье с доставкой</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero__background">
+            <!-- Background video or image with parallax effect -->
+            <div class="hero__image" style="background-image: url('img/hero-bg-enhanced.svg');"></div>
+        </div>
+        <div class="hero__content">
+            <h1 class="hero__title">Крамблкукис — хруст, который ты полюбишь</h1>
+            <h2 class="hero__subtitle">Ручная работа. Натуральные ингредиенты. Доставка в день заказа.</h2>
+            <button class="hero__cta" id="try-now-btn">Попробовать сейчас</button>
+        </div>
+        <div class="hero__crumbs"></div>
+    </section>
+
+    <!-- About Product Section -->
+    <section class="product">
+        <h2 class="section-title">Встречай Крамблкукис!</h2>
+        <p class="product__text">Наши крамблкукис — это идеальный баланс хруста и нежности. Каждое печенье создано вручную из лучших ингредиентов. Выбери вкус, который покорит твоё сердце!</p>
+        
+        <div class="flavors">
+            <div class="flavor-card" data-aos="flip-left" data-aos-delay="0">
+                <div class="flavor-card__image" style="background-image: url('img/chocolate.svg');"></div>
+                <h3 class="flavor-card__title">Шоколадный экстаз</h3>
+                <p class="flavor-card__description">Темный шоколад, какао-крошка, глазурь</p>
+                <button class="flavor-card__button add-to-cart-btn" data-name="Шоколадный экстаз" data-price="300">Добавить в корзину</button>
+            </div>
+            
+            <div class="flavor-card" data-aos="flip-left" data-aos-delay="200">
+                <div class="flavor-card__image" style="background-image: url('img/berry.svg');"></div>
+                <h3 class="flavor-card__title">Ягодный вальс</h3>
+                <p class="flavor-card__description">Малина, черника, ежевика</p>
+                <button class="flavor-card__button add-to-cart-btn" data-name="Ягодный вальс" data-price="320">Добавить в корзину</button>
+            </div>
+            
+            <div class="flavor-card" data-aos="flip-left" data-aos-delay="400">
+                <div class="flavor-card__image" style="background-image: url('img/nuts.svg');"></div>
+                <h3 class="flavor-card__title">Ореховый джаз</h3>
+                <p class="flavor-card__description">Фундук, миндаль, грецкий орех</p>
+                <button class="flavor-card__button add-to-cart-btn" data-name="Ореховый джаз" data-price="340">Добавить в корзину</button>
+            </div>
+            
+            <div class="flavor-card" data-aos="flip-left" data-aos-delay="600">
+                <div class="flavor-card__image" style="background-image: url('img/caramel.svg');"></div>
+                <h3 class="flavor-card__title">Карамельный блюз</h3>
+                <p class="flavor-card__description">Соленая карамель, ваниль</p>
+                <button class="flavor-card__button add-to-cart-btn" data-name="Карамельный блюз" data-price="310">Добавить в корзину</button>
+            </div>
+            
+            <div class="flavor-card" data-aos="flip-left" data-aos-delay="800">
+                <div class="flavor-card__image" style="background-image: url('img/citrus.svg');"></div>
+                <h3 class="flavor-card__title">Цитрусовый бриз</h3>
+                <p class="flavor-card__description">Лимон, апельсин, лайм</p>
+                <button class="flavor-card__button add-to-cart-btn" data-name="Цитрусовый бриз" data-price="290">Добавить в корзину</button>
+            </div>
+            
+            <div class="flavor-card" data-aos="flip-left" data-aos-delay="1000">
+                <div class="flavor-card__image" style="background-image: url('img/vanilla.svg');"></div>
+                <h3 class="flavor-card__title">Ванильная мечта</h3>
+                <p class="flavor-card__description">Мадагаскарская ваниль, белый шоколад</p>
+                <button class="flavor-card__button add-to-cart-btn" data-name="Ванильная мечта" data-price="280">Добавить в корзину</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cookie of the Month Section -->
+    <section class="cookie-month">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Печенье месяца</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Каждый месяц мы создаем новый уникальный вкус для наших клиентов</p>
+            
+            <div class="cookie-month__content" data-aos="zoom-in">
+                <div class="cookie-month__image">
+                    <div class="cookie-month__badge">Новинка!</div>
+                    <img src="img/cookie-month.svg" alt="Печенье месяца" class="cookie-month__img">
+                </div>
+                <div class="cookie-month__info">
+                    <h3 class="cookie-month__title">Кленовый восторг</h3>
+                    <p class="cookie-month__description">Наше новое печенье с настоящим кленовым сиропом, пеканами и нотками корицы. Нежный вкус канадского клена в сочетании с хрустящей текстурой нашего фирменного печенья.</p>
+                    <div class="cookie-month__features">
+                        <div class="cookie-month__feature">
+                            <span class="cookie-month__feature-icon">★</span>
+                            <span class="cookie-month__feature-text">Натуральный кленовый сироп</span>
+                        </div>
+                        <div class="cookie-month__feature">
+                            <span class="cookie-month__feature-icon">★</span>
+                            <span class="cookie-month__feature-text">Отборные пеканы</span>
+                        </div>
+                        <div class="cookie-month__feature">
+                            <span class="cookie-month__feature-icon">★</span>
+                            <span class="cookie-month__feature-text">Цейлонская корица</span>
+                        </div>
+                        <div class="cookie-month__feature">
+                            <span class="cookie-month__feature-icon">★</span>
+                            <span class="cookie-month__feature-text">Ограниченная серия</span>
+                        </div>
+                    </div>
+                    <div class="cookie-month__cta">
+                        <span class="cookie-month__price">350 ₽ / 100г</span>
+                        <button class="cookie-month__button" data-name="Кленовый восторг" data-price="350">Добавить в корзину</button>
+                    </div>
+                    <div class="cookie-month__timer">
+                        <p>До конца предложения осталось:</p>
+                        <div class="cookie-month__countdown" id="monthlyCountdown">
+                            <div class="cookie-month__countdown-item">
+                                <span class="cookie-month__countdown-value" id="countdown-days">21</span>
+                                <span class="cookie-month__countdown-label">дней</span>
+                            </div>
+                            <div class="cookie-month__countdown-item">
+                                <span class="cookie-month__countdown-value" id="countdown-hours">11</span>
+                                <span class="cookie-month__countdown-label">часов</span>
+                            </div>
+                            <div class="cookie-month__countdown-item">
+                                <span class="cookie-month__countdown-value" id="countdown-minutes">45</span>
+                                <span class="cookie-month__countdown-label">минут</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advantages Section -->
+    <section class="advantages">
+        <h2 class="section-title">Почему мы?</h2>
+        
+        <div class="advantages__grid">
+            <div class="advantage-item" data-aos="zoom-in">
+                <div class="advantage-item__icon eco-icon"></div>
+                <p class="advantage-item__text">Эко-ингредиенты<br>Только натуральное, без ГМО и химии</p>
+            </div>
+            
+            <div class="advantage-item" data-aos="zoom-in" data-aos-delay="200">
+                <div class="advantage-item__icon fresh-icon"></div>
+                <p class="advantage-item__text">Свежий подход<br>Печем утром, доставляем днём</p>
+            </div>
+            
+            <div class="advantage-item" data-aos="zoom-in" data-aos-delay="400">
+                <div class="advantage-item__icon delivery-icon"></div>
+                <p class="advantage-item__text">Молниеносная доставка<br>До твоей двери за 24 часа</p>
+            </div>
+            
+            <div class="advantage-item" data-aos="zoom-in" data-aos-delay="600">
+                <div class="advantage-item__icon taste-icon"></div>
+                <p class="advantage-item__text">Уникальный вкус<br>Рецепты, которых нет ни у кого</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">От теста до твоего стола</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Прокрутите галерею, чтобы увидеть весь процесс создания наших печений</p>
+            
+            <div class="swiper-container gallery-swiper" data-aos="fade-up" data-aos-delay="200">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="gallery-image-wrapper">
+                            <img src="img/process-1-updated.svg?v=3" alt="Замешивание теста">
+                        </div>
+                        <p class="gallery__caption">Замешивание теста вручную</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gallery-image-wrapper">
+                            <img src="img/process-2-updated.svg?v=3" alt="Выпечка в духовке">
+                        </div>
+                        <p class="gallery__caption">Выпечка в духовке</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gallery-image-wrapper">
+                            <img src="img/process-3-updated.svg?v=3" alt="Упаковка">
+                        </div>
+                        <p class="gallery__caption">Упаковка с любовью</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gallery-image-wrapper">
+                            <img src="img/process-4-updated.svg?v=3" alt="Текстура печенья">
+                        </div>
+                        <p class="gallery__caption">Идеальная текстура</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gallery-image-wrapper">
+                            <img src="img/process-5-updated.svg?v=3" alt="Наслаждение с кофе">
+                        </div>
+                        <p class="gallery__caption">Идеально с чашечкой кофе</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="gallery-image-wrapper">
+                            <img src="img/process-6-updated.svg?v=3" alt="Довольные клиенты">
+                        </div>
+                        <p class="gallery__caption">Счастливые клиенты</p>
+                    </div>
+                </div>
+                
+                <!-- Элементы управления слайдером -->
+                <div class="swiper-pagination gallery-pagination"></div>
+            </div>
+            
+            <div class="gallery-info" data-aos="fade-up" data-aos-delay="300">
+                <p>Используйте стрелки, точки или свайпы для навигации по галерее</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cookie Customizer Section -->
+    <section class="cookie-customizer" id="customizer">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Создай своё печенье</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Выбери основу, добавки и размер, чтобы создать идеальное печенье!</p>
+            
+            <div class="customizer-container" data-aos="fade-up" data-aos-delay="200">
+                <div class="customizer-preview">
+                    <div class="cookie-preview">
+                        <img src="img/cookie-base.svg" alt="Основа печенья" class="cookie-base">
+                        <img src="img/topping-chocolate.svg" alt="Шоколад" class="cookie-topping topping-chocolate" style="display: none;">
+                        <img src="img/topping-nuts.svg" alt="Орехи" class="cookie-topping topping-nuts" style="display: none;">
+                        <img src="img/topping-sprinkles.svg" alt="Посыпка" class="cookie-topping topping-sprinkles" style="display: none;">
+                        <img src="img/topping-caramel.svg" alt="Карамель" class="cookie-topping topping-caramel" style="display: none;">
+                        <img src="img/topping-berries.svg" alt="Ягоды" class="cookie-topping topping-berries" style="display: none;">
+                        <img src="img/topping-white-chocolate.svg" alt="Белый шоколад" class="cookie-topping topping-white-chocolate" style="display: none;">
+                        <img src="img/topping-mint.svg" alt="Мята" class="cookie-topping topping-mint" style="display: none;">
+                        <img src="img/topping-coconut.svg" alt="Кокосовая стружка" class="cookie-topping topping-coconut" style="display: none;">
+                        <img src="img/topping-cinnamon.svg" alt="Корица" class="cookie-topping topping-cinnamon" style="display: none;">
+                        <img src="img/topping-honey.svg" alt="Мёд" class="cookie-topping topping-honey" style="display: none;">
+                    </div>
+                    <div class="cookie-name">
+                        <h3>Твоё печенье</h3>
+                        <p id="cookie-description">Выбери ингредиенты справа</p>
+                    </div>
+                </div>
+                
+                <div class="customizer-options">
+                    <div class="customizer-section">
+                        <h3>Основа</h3>
+                        <div class="option-group">
+                            <label class="option-item">
+                                <input type="radio" name="base" value="classic" checked>
+                                <span class="option-name">Классическая</span>
+                            </label>
+                            <label class="option-item">
+                                <input type="radio" name="base" value="oatmeal">
+                                <span class="option-name">Овсяная</span>
+                            </label>
+                            <label class="option-item">
+                                <input type="radio" name="base" value="coconut">
+                                <span class="option-name">Кокосовая</span>
+                            </label>
+                            <label class="option-item">
+                                <input type="radio" name="base" value="chocolate">
+                                <span class="option-name">Шоколадная</span>
+                            </label>
+                            <label class="option-item">
+                                <input type="radio" name="base" value="almond">
+                                <span class="option-name">Миндальная</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="customizer-section">
+                        <h3>Добавки</h3>
+                        <div class="option-group">
+                            <label class="option-item">
+                                <input type="checkbox" name="topping" value="chocolate">
+                                <span class="option-name">Шоколад</span>
+                            </label>
+                            <label class="option-item">
+                                <input type="checkbox" name="topping" value="nuts">
+                                <span class="option-name">Орехи</span>
+                            </label>
+                            <label class="option-item">
+                                <input type="checkbox" name="topping" value="sprinkles">
+                                <span class="option-name">Посыпка</span>
+                            </label>
+                            <label class="option-item">
+                                <input type="checkbox" name="topping" value="caramel">
+                                <span class="option-name">Карамель</span>
+                            </label>
+                            <label class="option-item">
+                                <input type="checkbox" name="topping" value="berries">
+                                <span class="option-name">Ягоды</span>
+                            </label>
+                            <label class="option-item">
+                                <input type="checkbox" name="topping" value="white-chocolate">
+                                <span class="option-name">Белый шоколад</span>
+                            </label>
+                            <label class="option-item">
+                                <input type="checkbox" name="topping" value="mint">
+                                <span class="option-name">Мята</span>
+                            </label>
+                            <label class="option-item">
+                                <input type="checkbox" name="topping" value="coconut">
+                                <span class="option-name">Кокосовая стружка</span>
+                            </label>
+                            <label class="option-item">
+                                <input type="checkbox" name="topping" value="cinnamon">
+                                <span class="option-name">Корица</span>
+                            </label>
+                            <label class="option-item">
+                                <input type="checkbox" name="topping" value="honey">
+                                <span class="option-name">Мёд</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="customizer-section">
+                        <h3>Размер</h3>
+                        <div class="option-group">
+                            <label class="option-item">
+                                <input type="radio" name="size" value="small">
+                                <span class="option-name">Маленький</span>
+                            </label>
+                            <label class="option-item">
+                                <input type="radio" name="size" value="medium" checked>
+                                <span class="option-name">Средний</span>
+                            </label>
+                            <label class="option-item">
+                                <input type="radio" name="size" value="large">
+                                <span class="option-name">Большой</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="customizer-actions">
+                        <button class="customizer-button" id="add-to-cart-custom">Добавить в корзину</button>
+                        <button class="customizer-button customizer-button--secondary" id="reset-customizer">Сбросить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Order Form Section -->
+    <section class="order" data-aos="slide-in-right">
+        <h2 class="section-title">Собери свой набор!</h2>
+        
+        <form class="order-form" id="orderForm">
+            <div class="flavor-selection">
+                <h3>Выберите вкусы:</h3>
+                <div class="flavor-checkbox">
+                    <input type="checkbox" id="flavor1" name="flavor" value="Шоколадный экстаз">
+                    <label for="flavor1">Шоколадный экстаз</label>
+                    <div class="quantity-control">
+                        <button type="button" class="quantity-btn minus">-</button>
+                        <input type="number" min="1" max="50" value="1" class="quantity-input" name="quantity-flavor1">
+                        <button type="button" class="quantity-btn plus">+</button>
+                    </div>
+                </div>
+                
+                <div class="flavor-checkbox">
+                    <input type="checkbox" id="flavor2" name="flavor" value="Ягодный вальс">
+                    <label for="flavor2">Ягодный вальс</label>
+                    <div class="quantity-control">
+                        <button type="button" class="quantity-btn minus">-</button>
+                        <input type="number" min="1" max="50" value="1" class="quantity-input" name="quantity-flavor2">
+                        <button type="button" class="quantity-btn plus">+</button>
+                    </div>
+                </div>
+                
+                <div class="flavor-checkbox">
+                    <input type="checkbox" id="flavor3" name="flavor" value="Ореховый джаз">
+                    <label for="flavor3">Ореховый джаз</label>
+                    <div class="quantity-control">
+                        <button type="button" class="quantity-btn minus">-</button>
+                        <input type="number" min="1" max="50" value="1" class="quantity-input" name="quantity-flavor3">
+                        <button type="button" class="quantity-btn plus">+</button>
+                    </div>
+                </div>
+                
+                <div class="flavor-checkbox">
+                    <input type="checkbox" id="flavor4" name="flavor" value="Карамельный блюз">
+                    <label for="flavor4">Карамельный блюз</label>
+                    <div class="quantity-control">
+                        <button type="button" class="quantity-btn minus">-</button>
+                        <input type="number" min="1" max="50" value="1" class="quantity-input" name="quantity-flavor4">
+                        <button type="button" class="quantity-btn plus">+</button>
+                    </div>
+                </div>
+                
+                <div class="flavor-checkbox">
+                    <input type="checkbox" id="flavor5" name="flavor" value="Цитрусовый бриз">
+                    <label for="flavor5">Цитрусовый бриз</label>
+                    <div class="quantity-control">
+                        <button type="button" class="quantity-btn minus">-</button>
+                        <input type="number" min="1" max="50" value="1" class="quantity-input" name="quantity-flavor5">
+                        <button type="button" class="quantity-btn plus">+</button>
+                    </div>
+                </div>
+                
+                <div class="flavor-checkbox">
+                    <input type="checkbox" id="flavor6" name="flavor" value="Ванильная мечта">
+                    <label for="flavor6">Ванильная мечта</label>
+                    <div class="quantity-control">
+                        <button type="button" class="quantity-btn minus">-</button>
+                        <input type="number" min="1" max="50" value="1" class="quantity-input" name="quantity-flavor6">
+                        <button type="button" class="quantity-btn plus">+</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-info">
+                <div class="form-group">
+                    <label for="name">Имя:</label>
+                    <input type="text" id="name" name="name" required maxlength="50">
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Телефон:</label>
+                    <input type="tel" id="phone" name="phone" required pattern="\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}" placeholder="+7 (XXX) XXX-XX-XX">
+                </div>
+                
+                <div class="form-group">
+                    <label for="address">Адрес доставки (опционально):</label>
+                    <textarea id="address" name="address"></textarea>
+                </div>
+            </div>
+            
+            <button type="submit" class="order-button">Заказать с хрустом!</button>
+            <p class="order-note">Мы свяжемся с тобой в течение 15 минут.</p>
+        </form>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews">
+        <h2 class="section-title">Наши счастливые хрустители</h2>
+        
+        <div class="reviews__grid">
+            <div class="review-card" data-aos="fade-up">
+                <div class="review-card__stars">★★★★★</div>
+                <p class="review-card__text">Шоколадный — это любовь с первого укуса!</p>
+                <p class="review-card__author">Мария</p>
+            </div>
+            
+            <div class="review-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="review-card__stars">★★★★☆</div>
+                <p class="review-card__text">Быстрая доставка, но ягодный мог быть послаще.</p>
+                <p class="review-card__author">Алексей</p>
+            </div>
+            
+            <div class="review-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="review-card__stars">★★★★★</div>
+                <p class="review-card__text">Упаковка — как подарок, вкусно невероятно!</p>
+                <p class="review-card__author">Елена</p>
+            </div>
+            
+            <div class="review-card" data-aos="fade-up" data-aos-delay="600">
+                <div class="review-card__stars">★★★★★</div>
+                <p class="review-card__text">Ореховый джаз — мой новый ритуал к кофе.</p>
+                <p class="review-card__author">Дмитрий</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promo Section -->
+    <section class="promo">
+        <h2 class="section-title">Сладкие бонусы</h2>
+        
+        <div class="promo__box" data-aos="pulse">
+            <p class="promo__text">Закажи 10 штук — 11-е в подарок!</p>
+        </div>
+        
+        <div class="promo__game">
+            <h3 class="promo__game-title">Поймай крошку</h3>
+            <p class="promo__game-description">Поймай 5 крошек за 10 секунд и получи промокод на скидку 10%!</p>
+            <button class="promo__game-button">Играть</button>
+            <div class="promo__game-area"></div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Частые вопросы</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Ответы на самые популярные вопросы о нашем печенье</p>
+            
+            <div class="faq__list" data-aos="fade-up" data-aos-delay="200">
+                <div class="faq__item">
+                    <div class="faq__question">
+                        <h3>Как долго хранится ваше печенье?</h3>
+                        <span class="faq__icon">+</span>
+                    </div>
+                    <div class="faq__answer">
+                        <p>Наше печенье сохраняет свежесть до 7 дней в герметичной упаковке при комнатной температуре. Для максимальной свежести рекомендуем хранить в прохладном месте. В холодильнике срок хранения увеличивается до 14 дней.</p>
+                    </div>
+                </div>
+                
+                <div class="faq__item">
+                    <div class="faq__question">
+                        <h3>Есть ли в вашем печенье аллергены?</h3>
+                        <span class="faq__icon">+</span>
+                    </div>
+                    <div class="faq__answer">
+                        <p>Да, наше печенье содержит глютен, яйца и молочные продукты. Некоторые виды также содержат орехи. Полный список ингредиентов и аллергенов указан на упаковке каждого продукта.</p>
+                    </div>
+                </div>
+                
+                <div class="faq__item">
+                    <div class="faq__question">
+                        <h3>Как осуществляется доставка?</h3>
+                        <span class="faq__icon">+</span>
+                    </div>
+                    <div class="faq__answer">
+                        <p>Мы доставляем по всему городу в течение 24 часов с момента заказа. При заказе до 12:00, доставка возможна в тот же день. Доставка бесплатна при заказе от 1500 рублей.</p>
+                    </div>
+                </div>
+                
+                <div class="faq__item">
+                    <div class="faq__question">
+                        <h3>Можно ли заказать печенье с индивидуальным дизайном?</h3>
+                        <span class="faq__icon">+</span>
+                    </div>
+                    <div class="faq__answer">
+                        <p>Да, мы принимаем индивидуальные и корпоративные заказы. Вы можете заказать печенье с логотипом вашей компании, особым дизайном или уникальным вкусом. Для индивидуальных заказов свяжитесь с нами по телефону или через форму обратной связи.</p>
+                    </div>
+                </div>
+                
+                <div class="faq__item">
+                    <div class="faq__question">
+                        <h3>Есть ли у вас веганские опции?</h3>
+                        <span class="faq__icon">+</span>
+                    </div>
+                    <div class="faq__answer">
+                        <p>В настоящее время мы разрабатываем линейку веганских печений, которая будет доступна в ближайшее время. Подпишитесь на нашу рассылку, чтобы узнать о запуске первыми!</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq__more" data-aos="fade-up" data-aos-delay="300">
+                <p>Не нашли ответ на свой вопрос?</p>
+                <a href="#contact" class="faq__contact-btn">Связаться с нами</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart -->
+    <div class="cart">
+        <button class="cart__button">
+            <span class="cart__icon"></span>
+            <span class="cart__counter">0</span>
+        </button>
+        
+        <div class="cart__panel">
+            <h3 class="cart__title">Корзина</h3>
+            <div class="cart__items"></div>
+            <div class="cart__total">
+                <p>Итого: <span class="cart__total-price">0₽</span></p>
+            </div>
+            <button class="cart__checkout">Оформить</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__logo">
+                <img src="img/logo.svg" alt="Крамблкукис" width="150" height="50">
+            </div>
+            
+            <div class="footer__contacts">
+                <p>+7 999 123-45-67</p>
+                <p>info@crumblecookies.ru</p>
+                <div class="footer__social">
+                    <a href="#" class="social-icon instagram"></a>
+                    <a href="#" class="social-icon telegram"></a>
+                    <a href="#" class="social-icon vk"></a>
+                </div>
+            </div>
+            
+            <div class="footer__map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.5887551873584!2d37.6173!3d55.7558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTXCsDQ1JzIwLjkiTiAzN8KwMzcnMDIuMyJF!5e0!3m2!1sru!2sru!4v1617734456789!5m2!1sru!2sru" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+        
+        <div class="footer__bottom">
+            <p>© 2025 Крамблкукис. Хрустим с любовью.</p>
+        </div>
+        
+        <button class="scroll-top"></button>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal" id="imageModal">
+        <div class="modal__content">
+            <span class="modal__close">&times;</span>
+            <img class="modal__image" src="" alt="">
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/cookie-cursor.js"></script>
+</body>
+</html>

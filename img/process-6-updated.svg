@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Фон -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF9E6" />
+      <stop offset="100%" stop-color="#FFE4B5" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-opacity="0.3" />
+    </filter>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2" />
+      <feOffset dx="1" dy="2" result="offsetblur" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3" />
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect width="400" height="300" rx="20" fill="url(#bgGradient)" />
+  
+  <!-- Счастливые люди -->
+  <!-- Первый человек -->
+  <circle cx="120" cy="130" r="30" fill="#FFD7B5" />
+  <circle cx="120" cy="130" r="25" fill="#FFE4C4" />
+  <path d="M105 120C105 120 115 130 135 120" stroke="#8B4513" stroke-width="1.5" stroke-linecap="round" />
+  <circle cx="110" cy="120" r="3" fill="#8B4513" />
+  <circle cx="130" cy="120" r="3" fill="#8B4513" />
+  <path d="M110 140C115 145 125 145 130 140" stroke="#FF6B6B" stroke-width="2" stroke-linecap="round" />
+  
+  <!-- Второй человек -->
+  <circle cx="200" cy="130" r="30" fill="#FFD7B5" />
+  <circle cx="200" cy="130" r="25" fill="#FFE4C4" />
+  <path d="M185 120C185 120 195 130 215 120" stroke="#8B4513" stroke-width="1.5" stroke-linecap="round" />
+  <circle cx="190" cy="120" r="3" fill="#8B4513" />
+  <circle cx="210" cy="120" r="3" fill="#8B4513" />
+  <path d="M190 140C195 145 205 145 210 140" stroke="#FF6B6B" stroke-width="2" stroke-linecap="round" />
+  
+  <!-- Третий человек -->
+  <circle cx="280" cy="130" r="30" fill="#FFD7B5" />
+  <circle cx="280" cy="130" r="25" fill="#FFE4C4" />
+  <path d="M265 120C265 120 275 130 295 120" stroke="#8B4513" stroke-width="1.5" stroke-linecap="round" />
+  <circle cx="270" cy="120" r="3" fill="#8B4513" />
+  <circle cx="290" cy="120" r="3" fill="#8B4513" />
+  <path d="M270 140C275 145 285 145 290 140" stroke="#FF6B6B" stroke-width="2" stroke-linecap="round" />
+  
+  <!-- Печенье в руках -->
+  <circle cx="120" cy="180" r="20" fill="#D2B48C" stroke="#8B4513" stroke-width="1" filter="url(#softShadow)" />
+  <circle cx="200" cy="180" r="20" fill="#D2B48C" stroke="#8B4513" stroke-width="1" filter="url(#softShadow)" />
+  <circle cx="280" cy="180" r="20" fill="#D2B48C" stroke="#8B4513" stroke-width="1" filter="url(#softShadow)" />
+  
+  <!-- Шоколадные чипсы на печенье -->
+  <circle cx="110" cy="175" r="3" fill="#5D4037" opacity="0.9" />
+  <circle cx="125" cy="170" r="3" fill="#5D4037" opacity="0.9" />
+  <circle cx="115" cy="185" r="3" fill="#5D4037" opacity="0.9" />
+  
+  <circle cx="190" cy="175" r="3" fill="#5D4037" opacity="0.9" />
+  <circle cx="205" cy="170" r="3" fill="#5D4037" opacity="0.9" />
+  <circle cx="195" cy="185" r="3" fill="#5D4037" opacity="0.9" />
+  
+  <circle cx="270" cy="175" r="3" fill="#5D4037" opacity="0.9" />
+  <circle cx="285" cy="170" r="3" fill="#5D4037" opacity="0.9" />
+  <circle cx="275" cy="185" r="3" fill="#5D4037" opacity="0.9" />
+  
+  <!-- Руки -->
+  <path d="M100 160L120 180" stroke="#FFD7B5" stroke-width="8" stroke-linecap="round" />
+  <path d="M140 160L120 180" stroke="#FFD7B5" stroke-width="8" stroke-linecap="round" />
+  
+  <path d="M180 160L200 180" stroke="#FFD7B5" stroke-width="8" stroke-linecap="round" />
+  <path d="M220 160L200 180" stroke="#FFD7B5" stroke-width="8" stroke-linecap="round" />
+  
+  <path d="M260 160L280 180" stroke="#FFD7B5" stroke-width="8" stroke-linecap="round" />
+  <path d="M300 160L280 180" stroke="#FFD7B5" stroke-width="8" stroke-linecap="round" />
+  
+  <!-- Сердечки над людьми -->
+  <path d="M120 80C115 70 105 70 100 80C95 90 100 100 110 105C120 100 125 90 120 80Z" fill="#FF6B6B" opacity="0.7" />
+  <path d="M200 80C195 70 185 70 180 80C175 90 180 100 190 105C200 100 205 90 200 80Z" fill="#FF6B6B" opacity="0.7" />
+  <path d="M280 80C275 70 265 70 260 80C255 90 260 100 270 105C280 100 285 90 280 80Z" fill="#FF6B6B" opacity="0.7" />
+  
+  <!-- Надпись -->
+  <rect x="50" y="30" width="300" height="40" rx="10" fill="#F5C107" filter="url(#shadow)" />
+  <text x="200" y="57" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white" text-anchor="middle">СЧАСТЛИВЫЕ КЛИЕНТЫ</text>
+</svg>

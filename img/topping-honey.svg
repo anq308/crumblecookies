@@ -1,0 +1,30 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <!-- u041cu0451u0434 -->
+    <path d="M70,80 C85,70 100,75 105,90 C110,105 100,120 85,125 C70,130 55,120 50,105 C45,90 55,85 70,80 Z" fill="#FFD700" opacity="0.7">
+      <animate attributeName="opacity" values="0.6;0.8;0.6" dur="3s" repeatCount="indefinite" />
+    </path>
+    <path d="M120,60 C135,50 150,55 155,70 C160,85 150,100 135,105 C120,110 105,100 100,85 C95,70 105,65 120,60 Z" fill="#FFA500" opacity="0.7">
+      <animate attributeName="opacity" values="0.7;0.9;0.7" dur="4s" repeatCount="indefinite" />
+    </path>
+    <path d="M90,120 C105,110 120,115 125,130 C130,145 120,160 105,165 C90,170 75,160 70,145 C65,130 75,125 90,120 Z" fill="#FFD700" opacity="0.7">
+      <animate attributeName="opacity" values="0.5;0.7;0.5" dur="3.5s" repeatCount="indefinite" />
+    </path>
+    <path d="M140,100 C155,90 170,95 175,110 C180,125 170,140 155,145 C140,150 125,140 120,125 C115,110 125,105 140,100 Z" fill="#FFA500" opacity="0.7">
+      <animate attributeName="opacity" values="0.6;0.8;0.6" dur="4.5s" repeatCount="indefinite" />
+    </path>
+    <!-- u0411u043bu0438u043au0438 u043du0430 u043cu0451u0434u0435 -->
+    <circle cx="80" cy="90" r="5" fill="#FFFFFF" opacity="0.4">
+      <animate attributeName="opacity" values="0.2;0.5;0.2" dur="3s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="130" cy="70" r="4" fill="#FFFFFF" opacity="0.3">
+      <animate attributeName="opacity" values="0.1;0.4;0.1" dur="4s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="100" cy="130" r="5" fill="#FFFFFF" opacity="0.4">
+      <animate attributeName="opacity" values="0.2;0.5;0.2" dur="3.5s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="150" cy="110" r="4" fill="#FFFFFF" opacity="0.3">
+      <animate attributeName="opacity" values="0.1;0.4;0.1" dur="4.5s" repeatCount="indefinite" />
+    </circle>
+  </g>
+</svg>

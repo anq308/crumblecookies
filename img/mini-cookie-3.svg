@@ -1,0 +1,31 @@
+<svg width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+  <!-- Mini Coconut Cookie -->
+  <defs>
+    <radialGradient id="cookieGradient" cx="50%" cy="50%" r="50%" fx="45%" fy="45%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="60%" stop-color="#F0E9D8" />
+      <stop offset="100%" stop-color="#E8DDCB" />
+    </radialGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="1" />
+      <feOffset dx="1" dy="1" result="offsetblur" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.5" />
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Main cookie shape with soft shadow -->
+  <circle cx="25" cy="25" r="20" fill="url(#cookieGradient)" stroke="#C0B5A0" stroke-width="1" filter="url(#softShadow)" />
+  
+  <!-- Coconut flakes -->
+  <ellipse cx="18" cy="15" rx="3" ry="1.5" fill="white" stroke="#CCCCCC" stroke-width="0.5" opacity="1" transform="rotate(30 18 15)" />
+  <ellipse cx="32" cy="18" rx="3" ry="1.5" fill="white" stroke="#CCCCCC" stroke-width="0.5" opacity="1" transform="rotate(-15 32 18)" />
+  <ellipse cx="22" cy="28" rx="2.5" ry="1.2" fill="white" stroke="#CCCCCC" stroke-width="0.5" opacity="1" transform="rotate(45 22 28)" />
+  <ellipse cx="30" cy="32" rx="2" ry="1" fill="white" stroke="#CCCCCC" stroke-width="0.5" opacity="1" transform="rotate(10 30 32)" />
+  <ellipse cx="15" cy="25" rx="2.5" ry="1.2" fill="white" stroke="#CCCCCC" stroke-width="0.5" opacity="1" transform="rotate(-25 15 25)" />
+</svg>

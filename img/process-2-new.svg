@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Фон -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF9E6" />
+      <stop offset="100%" stop-color="#FFE4B5" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-opacity="0.3" />
+    </filter>
+    <linearGradient id="ovenGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#666666" />
+      <stop offset="100%" stop-color="#333333" />
+    </linearGradient>
+    <radialGradient id="heatGlow" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#FF6600" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#FF6600" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  
+  <rect width="400" height="300" rx="20" fill="url(#bgGradient)" />
+  
+  <!-- Духовка -->
+  <rect x="50" y="70" width="300" height="180" rx="10" fill="url(#ovenGradient)" stroke="#222222" stroke-width="3" />
+  
+  <!-- Стекло духовки -->
+  <rect x="80" y="90" width="240" height="120" rx="5" fill="#222222" stroke="#444444" stroke-width="2" />
+  <rect x="85" y="95" width="230" height="110" rx="3" fill="#111111" />
+  
+  <!-- Свечение внутри духовки -->
+  <rect x="90" y="100" width="220" height="100" rx="2" fill="#FF3300" opacity="0.1" />
+  <ellipse cx="200" cy="150" rx="100" ry="40" fill="url(#heatGlow)" />
+  
+  <!-- Противень с печеньем -->
+  <rect x="100" y="130" width="200" height="10" fill="#777777" stroke="#555555" stroke-width="1" />
+  
+  <!-- Печенье на противне -->
+  <circle cx="130" cy="125" r="15" fill="#D2B48C" stroke="#8B4513" stroke-width="1" />
+  <circle cx="170" cy="125" r="15" fill="#D2B48C" stroke="#8B4513" stroke-width="1" />
+  <circle cx="210" cy="125" r="15" fill="#D2B48C" stroke="#8B4513" stroke-width="1" />
+  <circle cx="250" cy="125" r="15" fill="#D2B48C" stroke="#8B4513" stroke-width="1" />
+  
+  <!-- Ручки и элементы управления -->
+  <circle cx="200" cy="220" r="10" fill="#CCCCCC" stroke="#999999" stroke-width="1" />
+  <circle cx="240" cy="220" r="10" fill="#CCCCCC" stroke="#999999" stroke-width="1" />
+  <circle cx="160" cy="220" r="10" fill="#CCCCCC" stroke="#999999" stroke-width="1" />
+  
+  <!-- Надпись -->
+  <rect x="50" y="30" width="300" height="40" rx="10" fill="#F5C107" filter="url(#shadow)" />
+  <text x="200" y="57" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white" text-anchor="middle">ВЫПЕЧКА В ДУХОВКЕ</text>
+</svg>
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="400" rx="20" fill="#FFF9E6"/>
+  
+  <!-- Oven -->
+  <rect x="80" y="120" width="240" height="200" rx="10" fill="#E0E0E0" stroke="#BDBDBD" stroke-width="3"/>
+  <rect x="100" y="150" width="200" height="140" rx="5" fill="#F5F5F5" stroke="#BDBDBD" stroke-width="2"/>
+  
+  <!-- Oven door handle -->
+  <rect x="180" y="310" width="40" height="10" rx="5" fill="#BDBDBD"/>
+  
+  <!-- Oven controls -->
+  <circle cx="120" cy="130" r="8" fill="#BDBDBD"/>
+  <circle cx="150" cy="130" r="8" fill="#BDBDBD"/>
+  <circle cx="180" cy="130" r="8" fill="#BDBDBD"/>
+  <rect x="210" y="125" width="80" height="10" rx="5" fill="#BDBDBD"/>
+  
+  <!-- Cookie tray -->
+  <rect x="120" y="180" width="160" height="10" fill="#A0A0A0"/>
+  
+  <!-- Cookies -->
+  <circle cx="140" cy="175" r="15" fill="#D2B48C" stroke="#8B4513" stroke-width="1"/>
+  <circle cx="180" cy="175" r="15" fill="#D2B48C" stroke="#8B4513" stroke-width="1"/>
+  <circle cx="220" cy="175" r="15" fill="#D2B48C" stroke="#8B4513" stroke-width="1"/>
+  <circle cx="260" cy="175" r="15" fill="#D2B48C" stroke="#8B4513" stroke-width="1"/>
+  
+  <!-- Cookie details -->
+  <circle cx="140" cy="175" r="10" fill="#C19A6B"/>
+  <circle cx="180" cy="175" r="10" fill="#C19A6B"/>
+  <circle cx="220" cy="175" r="10" fill="#C19A6B"/>
+  <circle cx="260" cy="175" r="10" fill="#C19A6B"/>
+  
+  <!-- Chocolate chips -->
+  <circle cx="135" cy="170" r="2" fill="#3E2723"/>
+  <circle cx="145" cy="170" r="2" fill="#3E2723"/>
+  <circle cx="140" cy="180" r="2" fill="#3E2723"/>
+  
+  <circle cx="175" cy="170" r="2" fill="#3E2723"/>
+  <circle cx="185" cy="170" r="2" fill="#3E2723"/>
+  <circle cx="180" cy="180" r="2" fill="#3E2723"/>
+  
+  <circle cx="215" cy="170" r="2" fill="#3E2723"/>
+  <circle cx="225" cy="170" r="2" fill="#3E2723"/>
+  <circle cx="220" cy="180" r="2" fill="#3E2723"/>
+  
+  <circle cx="255" cy="170" r="2" fill="#3E2723"/>
+  <circle cx="265" cy="170" r="2" fill="#3E2723"/>
+  <circle cx="260" cy="180" r="2" fill="#3E2723"/>
+  
+  <!-- Heat waves -->
+  <path d="M130 230C140 220 150 230 160 220C170 210 180 220 190 210" stroke="#FF6B6B" stroke-width="2" stroke-dasharray="2 2" opacity="0.7"/>
+  <path d="M200 230C210 220 220 230 230 220C240 210 250 220 260 210" stroke="#FF6B6B" stroke-width="2" stroke-dasharray="2 2" opacity="0.7"/>
+  <path d="M130 250C140 240 150 250 160 240C170 230 180 240 190 230" stroke="#FF6B6B" stroke-width="2" stroke-dasharray="2 2" opacity="0.7"/>
+  <path d="M200 250C210 240 220 250 230 240C240 230 250 240 260 230" stroke="#FF6B6B" stroke-width="2" stroke-dasharray="2 2" opacity="0.7"/>
+  
+  <!-- Oven light -->
+  <circle cx="200" cy="120" r="5" fill="#FFD700">
+    <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+</svg>

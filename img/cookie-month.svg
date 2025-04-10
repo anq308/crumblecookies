@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600" height="600" viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with gradient -->
+  <rect width="600" height="600" rx="300" fill="url(#paint0_radial)"/>
+  
+  <!-- Cookie base -->
+  <circle cx="300" cy="300" r="200" fill="#C19A6B" stroke="#8B4513" stroke-width="5"/>
+  
+  <!-- Cookie texture -->
+  <circle cx="300" cy="300" r="180" fill="#A67C52" stroke="#8B4513" stroke-width="2" opacity="0.3"/>
+  
+  <!-- Cookie cracks -->
+  <path d="M200 250C220 230 240 220 260 230C280 240 290 270 280 290" stroke="#8B4513" stroke-width="3" opacity="0.7"/>
+  <path d="M320 230C340 210 360 200 380 210C400 220 410 250 400 270" stroke="#8B4513" stroke-width="3" opacity="0.7"/>
+  <path d="M240 340C260 320 280 310 300 320C320 330 330 360 320 380" stroke="#8B4513" stroke-width="3" opacity="0.7"/>
+  <path d="M350 350C370 330 390 320 410 330C430 340 440 370 430 390" stroke="#8B4513" stroke-width="3" opacity="0.7"/>
+  
+  <!-- Maple syrup drizzle -->
+  <path d="M250 150C270 170 290 180 310 170C330 160 340 130 330 110" stroke="#8B4513" stroke-width="8" stroke-linecap="round" opacity="0.8"/>
+  <path d="M350 150C370 170 390 180 410 170C430 160 440 130 430 110" stroke="#8B4513" stroke-width="8" stroke-linecap="round" opacity="0.8"/>
+  <path d="M200 250C220 270 240 280 260 270C280 260 290 230 280 210" stroke="#8B4513" stroke-width="8" stroke-linecap="round" opacity="0.8"/>
+  
+  <!-- Maple leaf decoration -->
+  <path d="M300 180L310 160L330 150L350 160L360 180L350 200L330 210L310 200L300 180Z" fill="#D4A017" stroke="#8B4513" stroke-width="2"/>
+  <path d="M300 180L290 170L280 170L270 180L280 190L290 190L300 180Z" fill="#D4A017" stroke="#8B4513" stroke-width="2"/>
+  <path d="M360 180L370 170L380 170L390 180L380 190L370 190L360 180Z" fill="#D4A017" stroke="#8B4513" stroke-width="2"/>
+  <path d="M330 150L330 130L330 110" stroke="#8B4513" stroke-width="2"/>
+  
+  <!-- Pecan nuts -->
+  <ellipse cx="250" cy="250" rx="30" ry="15" fill="#8B4513" stroke="#5D2906" stroke-width="2" transform="rotate(30 250 250)"/>
+  <ellipse cx="350" cy="250" rx="30" ry="15" fill="#8B4513" stroke="#5D2906" stroke-width="2" transform="rotate(-30 350 250)"/>
+  <ellipse cx="250" cy="350" rx="30" ry="15" fill="#8B4513" stroke="#5D2906" stroke-width="2" transform="rotate(-30 250 350)"/>
+  <ellipse cx="350" cy="350" rx="30" ry="15" fill="#8B4513" stroke="#5D2906" stroke-width="2" transform="rotate(30 350 350)"/>
+  
+  <!-- Cinnamon swirls -->
+  <path d="M300 250C310 240 320 240 330 250C340 260 340 270 330 280C320 290 310 290 300 280C290 270 290 260 300 250Z" fill="#D2691E" opacity="0.7"/>
+  <path d="M270 300C280 290 290 290 300 300C310 310 310 320 300 330C290 340 280 340 270 330C260 320 260 310 270 300Z" fill="#D2691E" opacity="0.7"/>
+  <path d="M330 300C340 290 350 290 360 300C370 310 370 320 360 330C350 340 340 340 330 330C320 320 320 310 330 300Z" fill="#D2691E" opacity="0.7"/>
+  
+  <!-- Sparkle effects -->
+  <circle cx="220" cy="220" r="5" fill="#FFD700">
+    <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="380" cy="220" r="5" fill="#FFD700">
+    <animate attributeName="opacity" values="1;0.3;1" dur="1.7s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="220" cy="380" r="5" fill="#FFD700">
+    <animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="380" cy="380" r="5" fill="#FFD700">
+    <animate attributeName="opacity" values="1;0.3;1" dur="2.2s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="300" cy="300" r="7" fill="#FFD700">
+    <animate attributeName="opacity" values="1;0.3;1" dur="1.8s" repeatCount="indefinite" />
+  </circle>
+  
+  <!-- Limited edition badge -->
+  <circle cx="450" cy="150" r="60" fill="#F5C107" stroke="#D4A017" stroke-width="3"/>
+  <text x="450" y="140" font-family="Pacifico, cursive" font-size="16" text-anchor="middle" fill="#3C2F2F">Кленовый</text>
+  <text x="450" y="160" font-family="Pacifico, cursive" font-size="16" text-anchor="middle" fill="#3C2F2F">восторг</text>
+  <text x="450" y="180" font-family="Montserrat, sans-serif" font-size="12" text-anchor="middle" fill="#3C2F2F">Новинка!</text>
+  
+  <!-- Gradient definition -->
+  <defs>
+    <radialGradient id="paint0_radial" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#FFF9E6"/>
+      <stop offset="1" stop-color="#FCF0D0"/>
+    </radialGradient>
+  </defs>
+</svg>

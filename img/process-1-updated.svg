@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Фон -->
+  <rect width="400" height="300" rx="20" fill="#FFF9E6" />
+  
+  <!-- Градиентный фон -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF9E6" />
+      <stop offset="100%" stop-color="#FFE4B5" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-opacity="0.3" />
+    </filter>
+  </defs>
+  
+  <rect width="400" height="300" rx="20" fill="url(#bgGradient)" />
+  
+  <!-- Миска -->
+  <ellipse cx="200" cy="180" rx="120" ry="60" fill="#E6E6E6" stroke="#CCCCCC" stroke-width="2" />
+  <ellipse cx="200" cy="180" rx="100" ry="50" fill="#F5F5F5" />
+  
+  <!-- Тесто -->
+  <ellipse cx="200" cy="170" rx="90" ry="40" fill="#E6C88A" />
+  <path d="M150 150C170 140 230 140 250 150C240 170 160 170 150 150Z" fill="#D2B48C" />
+  
+  <!-- Рука с венчиком -->
+  <path d="M300 100C320 80 340 70 350 90C330 130 320 150 300 160" fill="#F5D0B0" stroke="#D2A679" stroke-width="2" />
+  <path d="M300 160L250 170" stroke="#999999" stroke-width="3" />
+  <path d="M250 170C240 180 240 160 250 150C260 140 270 160 260 170" fill="#CCCCCC" stroke="#999999" stroke-width="2" />
+  
+  <!-- Ингредиенты вокруг -->
+  <circle cx="100" cy="100" r="20" fill="#FFFFFF" stroke="#CCCCCC" stroke-width="2" /> <!-- Яйцо -->
+  <rect x="120" y="80" width="30" height="40" fill="#F5DEB3" stroke="#D2B48C" stroke-width="2" /> <!-- Мука -->
+  <circle cx="80" cy="140" r="15" fill="#8B4513" /> <!-- Шоколадные чипсы -->
+  
+  <!-- Надпись -->
+  <rect x="50" y="30" width="300" height="40" rx="10" fill="#F5C107" filter="url(#shadow)" />
+  <text x="200" y="57" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white" text-anchor="middle">ЗАМЕШИВАНИЕ ТЕСТА</text>
+</svg>

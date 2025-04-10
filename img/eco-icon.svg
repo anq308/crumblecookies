@@ -1,0 +1,25 @@
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="leaf-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8BC34A" />
+      <stop offset="100%" stop-color="#689F38" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="50" cy="50" r="48" fill="#F1F8E9" stroke="#C5E1A5" stroke-width="2" />
+  
+  <!-- Leaf shape -->
+  <path d="M25,50 Q25,25 50,25 Q75,25 75,50 Q75,75 50,75 Q25,75 25,50 Z" fill="url(#leaf-gradient)" />
+  <path d="M50,25 Q50,50 25,50 M50,25 Q50,50 75,50 M50,75 Q50,50 25,50 M50,75 Q50,50 75,50" fill="none" stroke="#FFFFFF" stroke-width="2" />
+  
+  <!-- Leaf vein -->
+  <path d="M50,25 L50,75" fill="none" stroke="#FFFFFF" stroke-width="2" />
+  
+  <!-- Small leaves -->
+  <path d="M35,40 Q35,30 45,30 Q55,30 55,40 Q55,50 45,50 Q35,50 35,40 Z" fill="#AED581" />
+  <path d="M45,60 Q45,50 55,50 Q65,50 65,60 Q65,70 55,70 Q45,70 45,60 Z" fill="#AED581" />
+  
+  <!-- Eco text -->
+  <text x="50" y="90" font-family="Arial, sans-serif" font-size="10" font-weight="bold" text-anchor="middle" fill="#558B2F">ECO</text>
+</svg>

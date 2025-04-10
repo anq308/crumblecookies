@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="250" height="250" viewBox="0 0 250 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Кокосовая стружка - более заметная -->
+    <g>
+        <!-- Крупные кусочки кокоса -->
+        <path d="M40,100 L60,90 L70,110 L50,115 Z" fill="#FFFFFF" stroke="#CCCCCC" stroke-width="2"/>
+        <path d="M80,70 L100,60 L105,80 L85,85 Z" fill="#FFFFFF" stroke="#CCCCCC" stroke-width="2"/>
+        <path d="M120,80 L140,70 L145,90 L125,95 Z" fill="#FFFFFF" stroke="#CCCCCC" stroke-width="2"/>
+        <path d="M150,110 L170,100 L175,120 L155,125 Z" fill="#FFFFFF" stroke="#CCCCCC" stroke-width="2"/>
+        <path d="M60,130 L80,120 L85,140 L65,145 Z" fill="#FFFFFF" stroke="#CCCCCC" stroke-width="2"/>
+        <path d="M100,140 L120,130 L125,150 L105,155 Z" fill="#FFFFFF" stroke="#CCCCCC" stroke-width="2"/>
+        <path d="M30,80 L50,70 L55,90 L35,95 Z" fill="#FFFFFF" stroke="#CCCCCC" stroke-width="2"/>
+        <path d="M70,60 L90,50 L95,70 L75,75 Z" fill="#FFFFFF" stroke="#CCCCCC" stroke-width="2"/>
+        <path d="M110,50 L130,40 L135,60 L115,65 Z" fill="#FFFFFF" stroke="#CCCCCC" stroke-width="2"/>
+        <path d="M140,60 L160,50 L165,70 L145,75 Z" fill="#FFFFFF" stroke="#CCCCCC" stroke-width="2"/>
+        
+        <!-- Дополнительные кусочки кокоса -->
+        <path d="M50,50 L65,45 L70,60 L55,65 Z" fill="#FFFFFF" stroke="#CCCCCC" stroke-width="2"/>
+        <path d="M160,80 L175,75 L180,90 L165,95 Z" fill="#FFFFFF" stroke="#CCCCCC" stroke-width="2"/>
+        <path d="M90,110 L105,105 L110,120 L95,125 Z" fill="#FFFFFF" stroke="#CCCCCC" stroke-width="2"/>
+        <path d="M130,150 L145,145 L150,160 L135,165 Z" fill="#FFFFFF" stroke="#CCCCCC" stroke-width="2"/>
+        <path d="M180,140 L195,135 L200,150 L185,155 Z" fill="#FFFFFF" stroke="#CCCCCC" stroke-width="2"/>
+    </g>
+</svg>

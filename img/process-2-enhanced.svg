@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600" height="400" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with gradient -->
+  <rect width="600" height="400" rx="20" fill="url(#paint0_linear)"/>
+  
+  <!-- Oven -->
+  <rect x="150" y="120" width="300" height="200" rx="10" fill="#555555" stroke="#333333" stroke-width="3"/>
+  <rect x="170" y="160" width="260" height="120" rx="5" fill="#444444" stroke="#333333" stroke-width="2"/>
+  
+  <!-- Oven door with window -->
+  <rect x="180" y="170" width="240" height="100" rx="5" fill="#222222" stroke="#111111" stroke-width="2"/>
+  <rect x="200" y="180" width="200" height="80" rx="3" fill="url(#paint1_radial)" stroke="#666666" stroke-width="2"/>
+  
+  <!-- Oven controls -->
+  <circle cx="200" cy="140" r="10" fill="#CCCCCC" stroke="#999999" stroke-width="1"/>
+  <circle cx="240" cy="140" r="10" fill="#CCCCCC" stroke="#999999" stroke-width="1"/>
+  <circle cx="280" cy="140" r="10" fill="#CCCCCC" stroke="#999999" stroke-width="1"/>
+  <rect x="320" y="135" width="100" height="10" rx="5" fill="#CCCCCC" stroke="#999999" stroke-width="1"/>
+  
+  <!-- Cookies on tray visible through window -->
+  <circle cx="230" cy="210" r="15" fill="#C19A6B" stroke="#8B4513" stroke-width="1"/>
+  <circle cx="270" cy="210" r="15" fill="#C19A6B" stroke="#8B4513" stroke-width="1"/>
+  <circle cx="310" cy="210" r="15" fill="#C19A6B" stroke="#8B4513" stroke-width="1"/>
+  <circle cx="350" cy="210" r="15" fill="#C19A6B" stroke="#8B4513" stroke-width="1"/>
+  
+  <circle cx="250" cy="240" r="15" fill="#C19A6B" stroke="#8B4513" stroke-width="1"/>
+  <circle cx="290" cy="240" r="15" fill="#C19A6B" stroke="#8B4513" stroke-width="1"/>
+  <circle cx="330" cy="240" r="15" fill="#C19A6B" stroke="#8B4513" stroke-width="1"/>
+  
+  <!-- Heat waves -->
+  <path d="M220 200C225 195 230 195 235 200C240 205 245 205 250 200" stroke="#FF6347" stroke-width="2" stroke-linecap="round" opacity="0.7">
+    <animate attributeName="opacity" values="0.7;0.3;0.7" dur="2s" repeatCount="indefinite" />
+  </path>
+  <path d="M260 230C265 225 270 225 275 230C280 235 285 235 290 230" stroke="#FF6347" stroke-width="2" stroke-linecap="round" opacity="0.5">
+    <animate attributeName="opacity" values="0.5;0.2;0.5" dur="1.8s" repeatCount="indefinite" />
+  </path>
+  <path d="M300 220C305 215 310 215 315 220C320 225 325 225 330 220" stroke="#FF6347" stroke-width="2" stroke-linecap="round" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;0.3;0.6" dur="2.2s" repeatCount="indefinite" />
+  </path>
+  
+  <!-- Kitchen elements -->
+  <rect x="100" y="320" width="400" height="20" fill="#8B4513" stroke="#5D2906" stroke-width="2"/>
+  <rect x="120" y="340" width="360" height="40" fill="#A0522D" stroke="#8B4513" stroke-width="2"/>
+  
+  <!-- Decorative elements -->
+  <path d="M100 100C120 80 150 70 180 80C210 90 220 120 200 140" stroke="#F5C107" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+  <path d="M500 120C480 100 450 90 420 100C390 110 380 140 400 160" stroke="#F5C107" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+  
+  <!-- Title -->
+  <text x="300" y="50" font-family="Pacifico, cursive" font-size="28" text-anchor="middle" fill="#3C2F2F">u0412u044bu043fu0435u0447u043au0430 u0432 u0434u0443u0445u043eu0432u043au0435</text>
+  <text x="300" y="80" font-family="Montserrat, sans-serif" font-size="16" text-anchor="middle" fill="#555555">u041cu0430u0433u0438u044f u043fu0440u0435u0432u0440u0430u0449u0435u043du0438u044f u0442u0435u0441u0442u0430 u0432 u0445u0440u0443u0441u0442u044fu0449u0435u0435 u043fu0435u0447u0435u043du044cu0435</text>
+  
+  <!-- Gradient and radial definitions -->
+  <defs>
+    <linearGradient id="paint0_linear" x1="0" y1="0" x2="600" y2="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFF9E6"/>
+      <stop offset="1" stop-color="#FCF0D0"/>
+    </linearGradient>
+    <radialGradient id="paint1_radial" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#FF8C00" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#FF4500" stop-opacity="0.1"/>
+    </radialGradient>
+  </defs>
+</svg>

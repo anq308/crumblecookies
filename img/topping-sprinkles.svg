@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Colorful Sprinkles with rounded ends -->
+  <!-- Red sprinkles -->
+  <rect x="100" y="100" width="20" height="5" rx="2.5" fill="#FF5252" transform="rotate(30 100 100)"/>
+  <rect x="160" y="190" width="15" height="4" rx="2" fill="#FF5252" transform="rotate(-15 160 190)"/>
+  
+  <!-- Blue sprinkles -->
+  <rect x="200" y="100" width="15" height="4" rx="2" fill="#536DFE" transform="rotate(-20 200 100)"/>
+  <rect x="110" y="160" width="12" height="3.5" rx="1.75" fill="#536DFE" transform="rotate(40 110 160)"/>
+  
+  <!-- Yellow sprinkles -->
+  <rect x="150" y="150" width="18" height="5" rx="2.5" fill="#FFD54F" transform="rotate(45 150 150)"/>
+  <rect x="90" y="120" width="14" height="4" rx="2" fill="#FFD54F" transform="rotate(-10 90 120)"/>
+  
+  <!-- Green sprinkles -->
+  <rect x="120" y="180" width="12" height="4" rx="2" fill="#4CAF50" transform="rotate(10 120 180)"/>
+  <rect x="210" y="150" width="16" height="4.5" rx="2.25" fill="#4CAF50" transform="rotate(-25 210 150)"/>
+  
+  <!-- Purple sprinkles -->
+  <rect x="180" y="180" width="16" height="5" rx="2.5" fill="#9C27B0" transform="rotate(-30 180 180)"/>
+  <rect x="130" y="90" width="13" height="4" rx="2" fill="#9C27B0" transform="rotate(15 130 90)"/>
+  
+  <!-- Orange sprinkles -->
+  <rect x="100" y="200" width="14" height="4" rx="2" fill="#FF9800" transform="rotate(60 100 200)"/>
+  <rect x="190" y="120" width="12" height="3.5" rx="1.75" fill="#FF9800" transform="rotate(-5 190 120)"/>
+  
+  <!-- Pink sprinkles -->
+  <rect x="200" y="200" width="17" height="5" rx="2.5" fill="#E91E63" transform="rotate(-45 200 200)"/>
+  <rect x="80" y="140" width="15" height="4" rx="2" fill="#E91E63" transform="rotate(25 80 140)"/>
+  
+  <!-- Cyan sprinkles -->
+  <rect x="130" y="130" width="13" height="4" rx="2" fill="#00BCD4" transform="rotate(15 130 130)"/>
+  <rect x="220" y="180" width="14" height="4" rx="2" fill="#00BCD4" transform="rotate(-35 220 180)"/>
+  
+  <!-- Lime sprinkles -->
+  <rect x="170" y="130" width="15" height="4" rx="2" fill="#8BC34A" transform="rotate(-15 170 130)"/>
+  <rect x="90" y="180" width="12" height="3.5" rx="1.75" fill="#8BC34A" transform="rotate(50 90 180)"/>
+  <rect x="90" y="200" width="10" height="4" rx="2" fill="#9C27B0" transform="rotate(-30 90 200)"/>
+  <rect x="120" y="210" width="10" height="4" rx="2" fill="#8BC34A" transform="rotate(45 120 210)"/>
+  <rect x="150" y="205" width="10" height="4" rx="2" fill="#F44336" transform="rotate(-60 150 205)"/>
+  <rect x="180" y="215" width="10" height="4" rx="2" fill="#2196F3" transform="rotate(30 180 215)"/>
+  <rect x="210" y="205" width="10" height="4" rx="2" fill="#FF9800" transform="rotate(-45 210 205)"/>
+</svg>

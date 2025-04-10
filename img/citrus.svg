@@ -1,0 +1,65 @@
+<svg width="350" height="250" viewBox="0 0 350 250" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="cookie-gradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#F5E9D6" />
+      <stop offset="100%" stop-color="#E6D7C3" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="350" height="250" fill="#F5F5F5" />
+  
+  <!-- Cookie -->
+  <circle cx="175" cy="125" r="100" fill="url(#cookie-gradient)" />
+  
+  <!-- Lemon pieces -->
+  <circle cx="140" cy="90" r="12" fill="#FFEB3B" />
+  <path d="M140,78 L140,102 M128,90 L152,90" stroke="#FFF9C4" stroke-width="1" />
+  
+  <!-- Orange pieces -->
+  <circle cx="200" cy="100" r="10" fill="#FF9800" />
+  <path d="M200,90 L200,110 M190,100 L210,100" stroke="#FFE0B2" stroke-width="1" />
+  
+  <!-- Lime pieces -->
+  <circle cx="160" cy="150" r="11" fill="#8BC34A" />
+  <path d="M160,139 L160,161 M149,150 L171,150" stroke="#DCEDC8" stroke-width="1" />
+  
+  <!-- More citrus pieces -->
+  <circle cx="210" cy="160" r="9" fill="#FFEB3B" />
+  <path d="M210,151 L210,169 M201,160 L219,160" stroke="#FFF9C4" stroke-width="1" />
+  
+  <circle cx="130" cy="130" r="8" fill="#FF9800" />
+  <path d="M130,122 L130,138 M122,130 L138,130" stroke="#FFE0B2" stroke-width="1" />
+  
+  <circle cx="180" cy="80" r="10" fill="#8BC34A" />
+  <path d="M180,70 L180,90 M170,80 L190,80" stroke="#DCEDC8" stroke-width="1" />
+  
+  <circle cx="220" cy="130" r="11" fill="#FFEB3B" />
+  <path d="M220,119 L220,141 M209,130 L231,130" stroke="#FFF9C4" stroke-width="1" />
+  
+  <!-- Zest specks -->
+  <g opacity="0.8">
+    <circle cx="150" cy="110" r="1" fill="#FFEB3B" />
+    <circle cx="190" cy="120" r="1" fill="#FF9800" />
+    <circle cx="170" cy="140" r="1" fill="#8BC34A" />
+    <circle cx="130" cy="150" r="1" fill="#FFEB3B" />
+    <circle cx="210" cy="140" r="1" fill="#FF9800" />
+    <circle cx="160" cy="170" r="1" fill="#8BC34A" />
+    <circle cx="140" cy="190" r="1" fill="#FFEB3B" />
+    <circle cx="190" cy="180" r="1" fill="#FF9800" />
+    <circle cx="155" cy="115" r="1" fill="#8BC34A" />
+    <circle cx="195" cy="125" r="1" fill="#FFEB3B" />
+    <circle cx="175" cy="145" r="1" fill="#FF9800" />
+    <circle cx="135" cy="155" r="1" fill="#8BC34A" />
+    <circle cx="215" cy="145" r="1" fill="#FFEB3B" />
+    <circle cx="165" cy="175" r="1" fill="#FF9800" />
+    <circle cx="145" cy="195" r="1" fill="#8BC34A" />
+    <circle cx="195" cy="185" r="1" fill="#FFEB3B" />
+  </g>
+  
+  <!-- Citrus glaze -->
+  <path d="M120,70 Q175,60 230,70 Q240,100 230,130 Q175,140 120,130 Q110,100 120,70" fill="none" stroke="#FFEB3B" stroke-width="2" stroke-opacity="0.4" />
+  
+  <!-- Label -->
+  <text x="175" y="240" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#8BC34A">Цитрусовый бриз</text>
+</svg>

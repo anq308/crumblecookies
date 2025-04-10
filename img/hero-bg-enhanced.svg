@@ -1,0 +1,138 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3C2F2F" />
+      <stop offset="100%" stop-color="#2A1F1F" />
+    </linearGradient>
+    <linearGradient id="cookie-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5E9D6" />
+      <stop offset="100%" stop-color="#E6D7C3" />
+    </linearGradient>
+    <linearGradient id="choc-cookie-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5D4037" />
+      <stop offset="100%" stop-color="#3E2723" />
+    </linearGradient>
+    <radialGradient id="spotlight" cx="50%" cy="50%" r="70%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#F5C107" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#F5C107" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="url(#bg-gradient)" />
+  
+  <!-- Spotlight effect -->
+  <circle cx="960" cy="540" r="600" fill="url(#spotlight)" />
+  
+  <!-- Large cookie in center -->
+  <g transform="translate(960, 540) scale(1.5)">
+    <circle cx="0" cy="0" r="150" fill="url(#cookie-gradient)" />
+    
+    <!-- Chocolate chips -->
+    <circle cx="-70" cy="-50" r="15" fill="#5D4037" />
+    <circle cx="30" cy="-80" r="12" fill="#5D4037" />
+    <circle cx="80" cy="-20" r="14" fill="#5D4037" />
+    <circle cx="60" cy="60" r="13" fill="#5D4037" />
+    <circle cx="-20" cy="70" r="15" fill="#5D4037" />
+    <circle cx="-80" cy="30" r="12" fill="#5D4037" />
+    <circle cx="0" cy="-20" r="14" fill="#5D4037" />
+    <circle cx="-40" cy="20" r="13" fill="#5D4037" />
+    <circle cx="40" cy="20" r="11" fill="#5D4037" />
+    
+    <!-- Cookie texture -->
+    <circle cx="-50" cy="-70" r="8" fill="#E6D7C3" opacity="0.7" />
+    <circle cx="10" cy="-60" r="7" fill="#E6D7C3" opacity="0.7" />
+    <circle cx="70" cy="-40" r="9" fill="#E6D7C3" opacity="0.7" />
+    <circle cx="80" cy="20" r="8" fill="#E6D7C3" opacity="0.7" />
+    <circle cx="40" cy="70" r="9" fill="#E6D7C3" opacity="0.7" />
+    <circle cx="-10" cy="80" r="7" fill="#E6D7C3" opacity="0.7" />
+    <circle cx="-60" cy="50" r="8" fill="#E6D7C3" opacity="0.7" />
+    <circle cx="-90" cy="0" r="9" fill="#E6D7C3" opacity="0.7" />
+    <circle cx="-30" cy="-30" r="7" fill="#E6D7C3" opacity="0.7" />
+    <circle cx="30" cy="-30" r="8" fill="#E6D7C3" opacity="0.7" />
+    <circle cx="20" cy="40" r="9" fill="#E6D7C3" opacity="0.7" />
+    <circle cx="-40" cy="40" r="7" fill="#E6D7C3" opacity="0.7" />
+  </g>
+  
+  <!-- Scattered cookies -->
+  <g opacity="0.8">
+    <!-- Top left -->
+    <g transform="translate(300, 200) rotate(30)">
+      <circle cx="0" cy="0" r="80" fill="url(#cookie-gradient)" />
+      <circle cx="-30" cy="-20" r="10" fill="#5D4037" />
+      <circle cx="15" cy="-40" r="8" fill="#5D4037" />
+      <circle cx="40" cy="-10" r="9" fill="#5D4037" />
+      <circle cx="30" cy="30" r="8" fill="#5D4037" />
+      <circle cx="-10" cy="35" r="10" fill="#5D4037" />
+      <circle cx="-40" cy="15" r="8" fill="#5D4037" />
+    </g>
+    
+    <!-- Top right -->
+    <g transform="translate(1600, 250) rotate(-20)">
+      <circle cx="0" cy="0" r="70" fill="url(#choc-cookie-gradient)" />
+      <circle cx="-25" cy="-15" r="7" fill="#FFF9C4" opacity="0.7" />
+      <circle cx="10" cy="-30" r="6" fill="#FFF9C4" opacity="0.7" />
+      <circle cx="30" cy="-5" r="7" fill="#FFF9C4" opacity="0.7" />
+      <circle cx="20" cy="25" r="6" fill="#FFF9C4" opacity="0.7" />
+      <circle cx="-5" cy="30" r="7" fill="#FFF9C4" opacity="0.7" />
+      <circle cx="-30" cy="10" r="6" fill="#FFF9C4" opacity="0.7" />
+    </g>
+    
+    <!-- Bottom left -->
+    <g transform="translate(400, 800) rotate(15)">
+      <circle cx="0" cy="0" r="90" fill="url(#choc-cookie-gradient)" />
+      <circle cx="-35" cy="-25" r="8" fill="#FFF9C4" opacity="0.7" />
+      <circle cx="15" cy="-45" r="7" fill="#FFF9C4" opacity="0.7" />
+      <circle cx="45" cy="-10" r="8" fill="#FFF9C4" opacity="0.7" />
+      <circle cx="35" cy="35" r="7" fill="#FFF9C4" opacity="0.7" />
+      <circle cx="-15" cy="40" r="8" fill="#FFF9C4" opacity="0.7" />
+      <circle cx="-45" cy="15" r="7" fill="#FFF9C4" opacity="0.7" />
+    </g>
+    
+    <!-- Bottom right -->
+    <g transform="translate(1500, 850) rotate(-25)">
+      <circle cx="0" cy="0" r="75" fill="url(#cookie-gradient)" />
+      <circle cx="-30" cy="-20" r="9" fill="#5D4037" />
+      <circle cx="15" cy="-35" r="7" fill="#5D4037" />
+      <circle cx="35" cy="-5" r="8" fill="#5D4037" />
+      <circle cx="25" cy="30" r="7" fill="#5D4037" />
+      <circle cx="-10" cy="35" r="9" fill="#5D4037" />
+      <circle cx="-35" cy="10" r="7" fill="#5D4037" />
+    </g>
+  </g>
+  
+  <!-- Falling crumbs -->
+  <g opacity="0.9">
+    <circle cx="300" cy="400" r="5" fill="#E6D7C3" />
+    <circle cx="500" cy="300" r="4" fill="#E6D7C3" />
+    <circle cx="700" cy="500" r="6" fill="#E6D7C3" />
+    <circle cx="900" cy="200" r="5" fill="#E6D7C3" />
+    <circle cx="1100" cy="400" r="4" fill="#E6D7C3" />
+    <circle cx="1300" cy="600" r="6" fill="#E6D7C3" />
+    <circle cx="1500" cy="300" r="5" fill="#E6D7C3" />
+    <circle cx="1700" cy="500" r="4" fill="#E6D7C3" />
+    <circle cx="400" cy="700" r="6" fill="#E6D7C3" />
+    <circle cx="600" cy="900" r="5" fill="#E6D7C3" />
+    <circle cx="800" cy="700" r="4" fill="#E6D7C3" />
+    <circle cx="1000" cy="900" r="6" fill="#E6D7C3" />
+    <circle cx="1200" cy="700" r="5" fill="#E6D7C3" />
+    <circle cx="1400" cy="900" r="4" fill="#E6D7C3" />
+    <circle cx="1600" cy="700" r="6" fill="#E6D7C3" />
+    
+    <circle cx="350" cy="450" r="3" fill="#5D4037" />
+    <circle cx="550" cy="350" r="2" fill="#5D4037" />
+    <circle cx="750" cy="550" r="4" fill="#5D4037" />
+    <circle cx="950" cy="250" r="3" fill="#5D4037" />
+    <circle cx="1150" cy="450" r="2" fill="#5D4037" />
+    <circle cx="1350" cy="650" r="4" fill="#5D4037" />
+    <circle cx="1550" cy="350" r="3" fill="#5D4037" />
+    <circle cx="1750" cy="550" r="2" fill="#5D4037" />
+    <circle cx="450" cy="750" r="4" fill="#5D4037" />
+    <circle cx="650" cy="950" r="3" fill="#5D4037" />
+    <circle cx="850" cy="750" r="2" fill="#5D4037" />
+    <circle cx="1050" cy="950" r="4" fill="#5D4037" />
+    <circle cx="1250" cy="750" r="3" fill="#5D4037" />
+    <circle cx="1450" cy="950" r="2" fill="#5D4037" />
+    <circle cx="1650" cy="750" r="4" fill="#5D4037" />
+  </g>
+</svg>

@@ -1,0 +1,69 @@
+<svg width="350" height="250" viewBox="0 0 350 250" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="cookie-gradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#F5E9D6" />
+      <stop offset="100%" stop-color="#E6D7C3" />
+    </radialGradient>
+    <linearGradient id="caramel-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFA000" />
+      <stop offset="100%" stop-color="#FF8F00" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="350" height="250" fill="#F5F5F5" />
+  
+  <!-- Cookie -->
+  <circle cx="175" cy="125" r="100" fill="url(#cookie-gradient)" />
+  
+  <!-- Caramel drizzle -->
+  <path d="M120,70 Q175,60 230,70 Q240,100 230,130 Q175,140 120,130 Q110,100 120,70Z" fill="url(#caramel-gradient)" opacity="0.7" />
+  
+  <!-- Caramel pools -->
+  <circle cx="140" cy="90" r="12" fill="url(#caramel-gradient)" />
+  <circle cx="200" cy="100" r="10" fill="url(#caramel-gradient)" />
+  <circle cx="160" cy="150" r="11" fill="url(#caramel-gradient)" />
+  <circle cx="210" cy="160" r="9" fill="url(#caramel-gradient)" />
+  <circle cx="130" cy="130" r="8" fill="url(#caramel-gradient)" />
+  
+  <!-- Caramel shine -->
+  <circle cx="137" cy="87" r="3" fill="#FFFFFF" opacity="0.6" />
+  <circle cx="197" cy="97" r="2" fill="#FFFFFF" opacity="0.6" />
+  <circle cx="157" cy="147" r="3" fill="#FFFFFF" opacity="0.6" />
+  <circle cx="207" cy="157" r="2" fill="#FFFFFF" opacity="0.6" />
+  <circle cx="127" cy="127" r="2" fill="#FFFFFF" opacity="0.6" />
+  
+  <!-- Salt flakes -->
+  <g opacity="0.9">
+    <circle cx="145" cy="95" r="1" fill="#FFFFFF" />
+    <circle cx="205" cy="105" r="1" fill="#FFFFFF" />
+    <circle cx="165" cy="155" r="1" fill="#FFFFFF" />
+    <circle cx="215" cy="165" r="1" fill="#FFFFFF" />
+    <circle cx="135" cy="135" r="1" fill="#FFFFFF" />
+    <circle cx="150" cy="100" r="1" fill="#FFFFFF" />
+    <circle cx="210" cy="110" r="1" fill="#FFFFFF" />
+    <circle cx="170" cy="160" r="1" fill="#FFFFFF" />
+    <circle cx="220" cy="170" r="1" fill="#FFFFFF" />
+    <circle cx="140" cy="140" r="1" fill="#FFFFFF" />
+  </g>
+  
+  <!-- Vanilla specks -->
+  <g opacity="0.8">
+    <circle cx="150" cy="110" r="1" fill="#000000" />
+    <circle cx="190" cy="120" r="1" fill="#000000" />
+    <circle cx="170" cy="140" r="1" fill="#000000" />
+    <circle cx="130" cy="150" r="1" fill="#000000" />
+    <circle cx="210" cy="140" r="1" fill="#000000" />
+    <circle cx="160" cy="170" r="1" fill="#000000" />
+    <circle cx="140" cy="190" r="1" fill="#000000" />
+    <circle cx="190" cy="180" r="1" fill="#000000" />
+    <circle cx="155" cy="115" r="1" fill="#000000" />
+    <circle cx="195" cy="125" r="1" fill="#000000" />
+    <circle cx="175" cy="145" r="1" fill="#000000" />
+    <circle cx="135" cy="155" r="1" fill="#000000" />
+    <circle cx="215" cy="145" r="1" fill="#000000" />
+  </g>
+  
+  <!-- Label -->
+  <text x="175" y="240" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#FF8F00">Карамельный блюз</text>
+</svg>
