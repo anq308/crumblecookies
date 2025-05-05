@@ -15,6 +15,6 @@ Allow: /
 Disallow: /admin/
 Disallow: /cgi-bin/
 
-Sitemap: https://example.com/sitemap.xml
-Host: example.com
+Sitemap: https://crumblecookies.vercel.app/sitemap.xml
+Host: crumblecookies.vercel.app
 Crawl-delay: 10
