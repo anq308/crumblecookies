@@ -2,12 +2,18 @@
 <html lang="ru">
 <head>
     <link rel="canonical" href="https://site.ru/catalog/">
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-N3HNBFC8');</script>
+    <!-- Google Tag Manager с отложенной загрузкой -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(function() {
+                (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+                })(window,document,'script','dataLayer','GTM-N3HNBFC8');
+            }, 2000); // Задержка в 2 секунды
+        });
+    </script>
     <!-- End Google Tag Manager -->
 
     <meta charset="UTF-8">
@@ -15,24 +21,124 @@
     <meta name="description" content="Купите свежее печенье Крамблкукис: натуральные ингредиенты, уникальные вкусы, доставка за 24 часа.">
     <meta name="keywords" content="крамблкукис, печенье ручной работы, купить выпечку, доставка печенья">
     <title>Крамблкукис — Artisan-печенье с доставкой</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Pacifico&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
-    <!-- Yandex.Metrika counter -->
-    <script type="text/javascript" >
-       (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-       m[i].l=1*new Date();
-       for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-       k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-       (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    <!-- Критический CSS -->
+    <style>
+        /* Критические стили для быстрой отрисовки первого экрана */
+        :root {
+            --primary-color: #FF6B6B;
+            --secondary-color: #4A4A4A;
+            --accent-color: #FFD166;
+            --bg-color: #FFF9F0;
+            --text-color: #333333;
+        }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+        .hero {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        .hero__title {
+            font-size: 3rem;
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .header {
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+            transition: background-color 0.3s ease;
+        }
+    </style>
+    <!-- Отложенная загрузка неприоритетных стилей -->
+    <link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="css/style.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Pacifico&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Pacifico&display=swap"></noscript>
+    <link rel="preload" href="https://unpkg.com/swiper/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"></noscript>
+    <link rel="preload" href="https://unpkg.com/aos@next/dist/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"></noscript>
+    
+    <!-- Скрипт для загрузки CSS -->
+    <script>
+    /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+    (function(w){
+        "use strict";
+        if(!w.loadCSS){
+            w.loadCSS=function(){};}
+        var rp=loadCSS.relpreload={};
+        rp.support=(function(){
+            var ret;
+            try{ret=w.document.createElement("link").relList.supports("preload")}catch(e){ret=!1}
+            return function(){return ret}})();
+        rp.bindMediaToggle=function(link){
+            var finalMedia=link.media||"all";
+            function enableStylesheet(){link.media=finalMedia}
+            if(link.addEventListener){
+                link.addEventListener("load",enableStylesheet)}
+            else if(link.attachEvent){
+                link.attachEvent("onload",enableStylesheet)}
+            setTimeout(function(){
+                link.rel="stylesheet";
+                link.media="only x"});
+            setTimeout(enableStylesheet,3000)};
+        rp.poly=function(){
+            if(rp.support()){
+                return}
+            var links=w.document.getElementsByTagName("link");
+            for(var i=0;i<links.length;i++){
+                var link=links[i];
+                if(link.rel==="preload"&&link.getAttribute("as")==="style"&&!link.getAttribute("data-loadcss")){
+                    link.setAttribute("data-loadcss",true);
+                    rp.bindMediaToggle(link)}}};if(!rp.support()){
+            rp.poly();
+            var run=w.setInterval(rp.poly,500);
+            if(w.addEventListener){
+                w.addEventListener("load",function(){
+                    rp.poly();
+                    w.clearInterval(run)})}else if(w.attachEvent){
+                w.attachEvent("onload",function(){
+                    rp.poly();
+                    w.clearInterval(run)})}}
+        if(typeof exports!=="undefined"){
+            exports.loadCSS=loadCSS}
+        else{w.loadCSS=loadCSS}}(typeof global!=="undefined"?global:this));
+    </script>
+    <!-- Yandex.Metrika counter с отложенной загрузкой -->
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(function() {
+                (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+                m[i].l=1*new Date();
+                for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+                k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+                (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-       ym(101028890, "init", {
-            clickmap:true,
-            trackLinks:true,
-            accurateTrackBounce:true,
-            webvisor:true
-       });
+                ym(101028890, "init", {
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+            }, 2000); // Задержка в 2 секунды
+        });
     </script>
     <noscript><div><img src="https://mc.yandex.ru/watch/101028890" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
@@ -116,7 +222,7 @@
             <div class="cookie-month__content" data-aos="zoom-in">
                 <div class="cookie-month__image">
                     <div class="cookie-month__badge">Новинка!</div>
-                    <img src="img/cookie-month.svg" alt="Печенье месяца" class="cookie-month__img">
+                    <img src="img/cookie-month.svg" alt="Печенье месяца" class="cookie-month__img" width="400" height="400" loading="lazy">
                 </div>
                 <div class="cookie-month__info">
                     <h3 class="cookie-month__title">Кленовый восторг</h3>
@@ -202,37 +308,37 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="gallery-image-wrapper">
-                            <img src="img/process-1-updated.svg?v=3" alt="Замешивание теста">
+                            <img src="img/process-1-updated.svg?v=3" alt="Замешивание теста" width="150" height="150" loading="lazy">
                         </div>
                         <p class="gallery__caption">Замешивание теста вручную</p>
                     </div>
                     <div class="swiper-slide">
                         <div class="gallery-image-wrapper">
-                            <img src="img/process-2-updated.svg?v=3" alt="Выпечка в духовке">
+                            <img src="img/process-2-updated.svg?v=3" alt="Выпечка в духовке" width="150" height="150" loading="lazy">
                         </div>
                         <p class="gallery__caption">Выпечка в духовке</p>
                     </div>
                     <div class="swiper-slide">
                         <div class="gallery-image-wrapper">
-                            <img src="img/process-3-updated.svg?v=3" alt="Упаковка">
+                            <img src="img/process-3-updated.svg?v=3" alt="Упаковка" width="150" height="150" loading="lazy">
                         </div>
                         <p class="gallery__caption">Упаковка с любовью</p>
                     </div>
                     <div class="swiper-slide">
                         <div class="gallery-image-wrapper">
-                            <img src="img/process-4-updated.svg?v=3" alt="Текстура печенья">
+                            <img src="img/process-4-updated.svg?v=3" alt="Текстура печенья" width="150" height="150" loading="lazy">
                         </div>
                         <p class="gallery__caption">Идеальная текстура</p>
                     </div>
                     <div class="swiper-slide">
                         <div class="gallery-image-wrapper">
-                            <img src="img/process-5-updated.svg?v=3" alt="Наслаждение с кофе">
+                            <img src="img/process-5-updated.svg?v=3" alt="Наслаждение с кофе" width="150" height="150" loading="lazy">
                         </div>
                         <p class="gallery__caption">Идеально с чашечкой кофе</p>
                     </div>
                     <div class="swiper-slide">
                         <div class="gallery-image-wrapper">
-                            <img src="img/process-6-updated.svg?v=3" alt="Довольные клиенты">
+                            <img src="img/process-6-updated.svg?v=3" alt="Довольные клиенты" width="150" height="150" loading="lazy">
                         </div>
                         <p class="gallery__caption">Счастливые клиенты</p>
                     </div>
@@ -257,17 +363,17 @@
             <div class="customizer-container" data-aos="fade-up" data-aos-delay="200">
                 <div class="customizer-preview">
                     <div class="cookie-preview">
-                        <img src="img/cookie-base.svg" alt="Основа печенья" class="cookie-base">
-                        <img src="img/topping-chocolate.svg" alt="Шоколад" class="cookie-topping topping-chocolate" style="display: none;">
-                        <img src="img/topping-nuts.svg" alt="Орехи" class="cookie-topping topping-nuts" style="display: none;">
-                        <img src="img/topping-sprinkles.svg" alt="Посыпка" class="cookie-topping topping-sprinkles" style="display: none;">
-                        <img src="img/topping-caramel.svg" alt="Карамель" class="cookie-topping topping-caramel" style="display: none;">
-                        <img src="img/topping-berries.svg" alt="Ягоды" class="cookie-topping topping-berries" style="display: none;">
-                        <img src="img/topping-white-chocolate.svg" alt="Белый шоколад" class="cookie-topping topping-white-chocolate" style="display: none;">
-                        <img src="img/topping-mint.svg" alt="Мята" class="cookie-topping topping-mint" style="display: none;">
-                        <img src="img/topping-coconut.svg" alt="Кокосовая стружка" class="cookie-topping topping-coconut" style="display: none;">
-                        <img src="img/topping-cinnamon.svg" alt="Корица" class="cookie-topping topping-cinnamon" style="display: none;">
-                        <img src="img/topping-honey.svg" alt="Мёд" class="cookie-topping topping-honey" style="display: none;">
+                        <img src="img/cookie-base.svg" alt="Основа печенья" class="cookie-base" width="300" height="300">
+                        <img src="img/topping-chocolate.svg" alt="Шоколад" class="cookie-topping topping-chocolate" style="display: none;" width="300" height="300">
+                        <img src="img/topping-nuts.svg" alt="Орехи" class="cookie-topping topping-nuts" style="display: none;" width="300" height="300">
+                        <img src="img/topping-sprinkles.svg" alt="Посыпка" class="cookie-topping topping-sprinkles" style="display: none;" width="300" height="300">
+                        <img src="img/topping-caramel.svg" alt="Карамель" class="cookie-topping topping-caramel" style="display: none;" width="300" height="300">
+                        <img src="img/topping-berries.svg" alt="Ягоды" class="cookie-topping topping-berries" style="display: none;" width="300" height="300">
+                        <img src="img/topping-white-chocolate.svg" alt="Белый шоколад" class="cookie-topping topping-white-chocolate" style="display: none;" width="300" height="300">
+                        <img src="img/topping-mint.svg" alt="Мята" class="cookie-topping topping-mint" style="display: none;" width="300" height="300">
+                        <img src="img/topping-coconut.svg" alt="Кокосовая стружка" class="cookie-topping topping-coconut" style="display: none;" width="300" height="300">
+                        <img src="img/topping-cinnamon.svg" alt="Корица" class="cookie-topping topping-cinnamon" style="display: none;" width="300" height="300">
+                        <img src="img/topping-honey.svg" alt="Мёд" class="cookie-topping topping-honey" style="display: none;" width="300" height="300">
                     </div>
                     <div class="cookie-name">
                         <h3>Твоё печенье</h3>
@@ -605,14 +711,20 @@
                 <p>+7 999 123-45-67</p>
                 <p>info@crumblecookies.ru</p>
                 <div class="footer__social">
-                    <a href="#" class="social-icon instagram"></a>
-                    <a href="#" class="social-icon telegram"></a>
-                    <a href="#" class="social-icon vk"></a>
+                    <a href="#" class="social-icon instagram" aria-label="Наш Instagram">
+                        <span class="visually-hidden">Наш Instagram</span>
+                    </a>
+                    <a href="#" class="social-icon telegram" aria-label="Наш Telegram">
+                        <span class="visually-hidden">Наш Telegram</span>
+                    </a>
+                    <a href="#" class="social-icon vk" aria-label="Наш ВКонтакте">
+                        <span class="visually-hidden">Наш ВКонтакте</span>
+                    </a>
                 </div>
             </div>
             
             <div class="footer__map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.5887551873584!2d37.6173!3d55.7558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTXCsDQ1JzIwLjkiTiAzN8KwMzcnMDIuMyJF!5e0!3m2!1sru!2sru!4v1617734456789!5m2!1sru!2sru" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.5887551873584!2d37.6173!3d55.7558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTXCsDQ1JzIwLjkiTiAzN8KwMzcnMDIuMyJF!5e0!3m2!1sru!2sru!4v1617734456789!5m2!1sru!2sru" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" title="Карта расположения пекарни Крамблкукис"></iframe>
             </div>
         </div>
         
@@ -627,15 +739,15 @@
     <div class="modal" id="imageModal">
         <div class="modal__content">
             <span class="modal__close">×</span>
-            <img class="modal__image" src="" alt="">
+            <img class="modal__image" src="" alt="" width="600" height="400">
         </div>
     </div>
 
-    <!-- Scripts -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/cookie-cursor.js"></script>
+    <!-- Scripts с отложенной загрузкой -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/cookie-cursor.js" defer></script>
 </body>
 </html>

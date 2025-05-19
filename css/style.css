@@ -20,6 +20,19 @@
     --shadow-large: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
 
+/* Класс для визуально скрытого текста (для доступности) */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+    white-space: nowrap;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -1166,8 +1179,10 @@ section {
 
 .promo__game-title {
     font-family: var(--font-pacifico);
-    color: var(--color-primary);
+    color: var(--color-dark); /* Изменен цвет для лучшей контрастности */
     margin-bottom: 15px;
+    font-weight: 700; /* Добавлен жирный шрифт для лучшей читаемости */
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1); /* Добавлена тень для улучшения читаемости */
 }
 
 .promo__game-description {
