@@ -67,8 +67,8 @@
         }
     </style>
     <!-- Отложенная загрузка неприоритетных стилей -->
-    <link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="css/style.css"></noscript>
+    <link rel="preload" href="css/style.css?v=1.2" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="css/style.css?v=1.2"></noscript>
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Pacifico&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Pacifico&display=swap"></noscript>
     <link rel="preload" href="https://unpkg.com/swiper/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -700,40 +700,6 @@
         </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer__content">
-            <div class="footer__logo">
-                <img src="img/logo.svg" alt="Крамблкукис" width="150" height="50">
-            </div>
-            
-            <div class="footer__contacts">
-                <p>+7 999 123-45-67</p>
-                <p>info@crumblecookies.ru</p>
-                <div class="footer__social">
-                    <a href="#" class="social-icon instagram" aria-label="Наш Instagram">
-                        <span class="visually-hidden">Наш Instagram</span>
-                    </a>
-                    <a href="#" class="social-icon telegram" aria-label="Наш Telegram">
-                        <span class="visually-hidden">Наш Telegram</span>
-                    </a>
-                    <a href="#" class="social-icon vk" aria-label="Наш ВКонтакте">
-                        <span class="visually-hidden">Наш ВКонтакте</span>
-                    </a>
-                </div>
-            </div>
-            
-            <div class="footer__map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.5887551873584!2d37.6173!3d55.7558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTXCsDQ1JzIwLjkiTiAzN8KwMzcnMDIuMyJF!5e0!3m2!1sru!2sru!4v1617734456789!5m2!1sru!2sru" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" title="Карта расположения пекарни Крамблкукис"></iframe>
-            </div>
-        </div>
-        
-        <div class="footer__bottom">
-            <p>© 2025 Крамблкукис. Хрустим с любовью.</p>
-        </div>
-        
-        <button class="scroll-top"></button>
-    </footer>
 
     <!-- Modal -->
     <div class="modal" id="imageModal">
@@ -749,5 +715,87 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" defer></script>
     <script src="js/main.js" defer></script>
     <script src="js/cookie-cursor.js" defer></script>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__company">
+                    <h3 class="footer__logo">Крамблкукис</h3>
+                    <p class="footer__text">Artisan-печенье с доставкой в Москве и области</p>
+                    <div class="footer__cookie-image">
+                        <img src="img/cookie-icon.svg" alt="Печенье" width="70" height="70">
+                    </div>
+                </div>
+                
+                <div class="footer__contacts">
+                    <h3 class="footer__heading">Контакты</h3>
+                    <a href="tel:+79991234567" class="footer__link footer__link--phone">+7 999 123-45-67</a>
+                    <a href="mailto:info@crumblecookies.ru" class="footer__link footer__link--email">info@crumblecookies.ru</a>
+                    <address class="footer__address">
+                        <span class="footer__map-marker"></span>
+                        <span>Москва, ул. Сладкая, д. 15</span>
+                    </address>
+                    <div class="footer__hours">
+                        <h4 class="footer__subheading">Часы работы:</h4>
+                        <p class="footer__hours-text">Пн-Пт: 9:00 - 21:00<br>Сб-Вс: 10:00 - 20:00</p>
+                    </div>
+                </div>
+                
+                <div class="footer__social">
+                    <h3 class="footer__heading">Мы в соцсетях</h3>
+                    <div class="footer__social-links">
+                        <a href="https://instagram.com/crumblecookies" class="footer__social-link footer__social-link--instagram" target="_blank">
+                            <span class="footer__social-icon"></span>
+                            <span>Наш Instagram</span>
+                        </a>
+                        <a href="https://t.me/crumblecookies" class="footer__social-link footer__social-link--telegram" target="_blank">
+                            <span class="footer__social-icon"></span>
+                            <span>Наш Telegram</span>
+                        </a>
+                        <a href="https://vk.com/crumblecookies" class="footer__social-link footer__social-link--vk" target="_blank">
+                            <span class="footer__social-icon"></span>
+                            <span>Наш ВКонтакте</span>
+                        </a>
+                    </div>
+                    <div class="footer__map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.3123036579766!2d37.6173!3d55.7558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTXCsDQ1JzIwLjkiTiAzN8KwMzcnMDIuMyJF!5e0!3m2!1sru!2sru!4v1621523316304!5m2!1sru!2sru" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                
+                <div class="footer__subscribe">
+                    <h3 class="footer__heading">Подпишитесь на новости</h3>
+                    <p class="footer__subscribe-text">Получайте новости о новых вкусах и акциях</p>
+                    <form class="footer__form">
+                        <div class="footer__input-group">
+                            <input type="email" class="footer__input" placeholder="Ваш email" required>
+                            <button type="submit" class="footer__submit">
+                                <span class="footer__submit-icon"></span>
+                            </button>
+                        </div>
+                        <div class="footer__consent">
+                            <input type="checkbox" id="footer-consent" required>
+                            <label for="footer-consent">Я согласен на обработку персональных данных и принимаю <a href="/privacy.html" class="footer__link">политику конфиденциальности</a></label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p class="footer__copyright">© 2025 Крамблкукис. Все права защищены.</p>
+                <div class="footer__links">
+                    <a href="/privacy.html" class="footer__bottom-link">Политика конфиденциальности</a>
+                    <a href="/terms.html" class="footer__bottom-link">Условия использования</a>
+                    <a href="/delivery.html" class="footer__bottom-link">Доставка и оплата</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer__crumbs"></div>
+    </footer>
+
+    <!-- Скрипты для анимаций и интерактивности -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
+    <script src="js/main.js" defer></script>
 </body>
 </html>

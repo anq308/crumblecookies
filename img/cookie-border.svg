@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 50">
+  <path d="M0,25 Q25,0 50,25 T100,25 T150,25 T200,25 T250,25 T300,25 T350,25 T400,25 T450,25 T500,25 T550,25 T600,25 T650,25 T700,25 T750,25 T800,25 T850,25 T900,25 T950,25 T1000,25" fill="none" stroke="#2A1F1F" stroke-width="5"/>
+  <circle cx="50" cy="25" r="15" fill="#F5C107"/>
+  <circle cx="150" cy="25" r="15" fill="#F5C107"/>
+  <circle cx="250" cy="25" r="15" fill="#F5C107"/>
+  <circle cx="350" cy="25" r="15" fill="#F5C107"/>
+  <circle cx="450" cy="25" r="15" fill="#F5C107"/>
+  <circle cx="550" cy="25" r="15" fill="#F5C107"/>
+  <circle cx="650" cy="25" r="15" fill="#F5C107"/>
+  <circle cx="750" cy="25" r="15" fill="#F5C107"/>
+  <circle cx="850" cy="25" r="15" fill="#F5C107"/>
+  <circle cx="950" cy="25" r="15" fill="#F5C107"/>
+</svg>
