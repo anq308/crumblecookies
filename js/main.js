@@ -344,26 +344,26 @@ document.addEventListener('DOMContentLoaded', function() {
             large: 1.2
         };
         
-        // Prices
+        // Prices - синхронизированы с ценами в корзине
         const prices = {
             base: {
-                classic: 100,
-                oatmeal: 120,
-                coconut: 130,
-                chocolate: 140,
-                almond: 150
+                classic: 80,
+                oatmeal: 90,
+                coconut: 100,
+                chocolate: 110,
+                almond: 120
             },
             topping: {
-                chocolate: 30,
-                nuts: 40,
-                sprinkles: 20,
-                caramel: 35,
-                berries: 45,
-                'white-chocolate': 35,
-                mint: 25,
-                coconut: 20,
+                chocolate: 15,
+                nuts: 15,
+                sprinkles: 15,
+                caramel: 15,
+                berries: 15,
+                'white-chocolate': 15,
+                mint: 15,
+                coconut: 15,
                 cinnamon: 15,
-                honey: 30
+                honey: 15
             },
             size: {
                 small: 0.8,

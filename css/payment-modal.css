@@ -343,4 +343,43 @@ input[type="radio"]:checked + label .payment-method__icon {
     .payment-modal__title {
         font-size: 24px;
     }
+    
+    .payment-form__submit {
+        max-width: 100%;
+        margin: 30px auto;
+        padding: 18px 32px;
+        font-size: 18px;
+        box-shadow: 0 6px 20px rgba(245, 193, 7, 0.4);
+        background: linear-gradient(45deg, var(--color-primary), var(--color-secondary));
+        position: sticky;
+        bottom: 10px;
+        z-index: 5;
+    }
+}
+
+@media (max-width: 480px) {
+    .payment-form__submit {
+        padding: 20px 32px;
+        font-size: 20px;
+        font-weight: 800;
+        box-shadow: 0 8px 25px rgba(245, 193, 7, 0.5);
+        border-radius: 16px;
+        margin-top: 40px;
+        animation: pulse 2s infinite;
+    }
+    
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+            box-shadow: 0 8px 25px rgba(245, 193, 7, 0.5);
+        }
+        50% {
+            transform: scale(1.03);
+            box-shadow: 0 10px 30px rgba(245, 193, 7, 0.7);
+        }
+        100% {
+            transform: scale(1);
+            box-shadow: 0 8px 25px rgba(245, 193, 7, 0.5);
+        }
+    }
 }

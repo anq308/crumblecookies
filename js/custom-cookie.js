@@ -14,7 +14,33 @@ document.addEventListener('DOMContentLoaded', function() {
             
             const baseName = baseElement.parentElement.querySelector('.option-name').textContent;
             const sizeName = sizeElement.parentElement.querySelector('.option-name').textContent;
-            const cookieName = `${baseName} ${sizeName.toLowerCase()} печенье`;
+            
+            // Получаем выбранные начинки
+            const selectedToppings = document.querySelectorAll('input[name="topping"]:checked');
+            const toppingNames = {
+                chocolate: 'шоколадом',
+                nuts: 'орехами',
+                sprinkles: 'посыпкой',
+                caramel: 'карамелью',
+                berries: 'ягодами',
+                'white-chocolate': 'белым шоколадом',
+                mint: 'мятой',
+                coconut: 'кокосовой стружкой',
+                cinnamon: 'корицей',
+                honey: 'мёдом'
+            };
+            
+            // Создаем текст с начинками
+            let toppingsText = '';
+            if (selectedToppings.length > 0) {
+                const toppingsList = Array.from(selectedToppings).map(t => toppingNames[t.value]);
+                toppingsText = ` с ${toppingsList.join(' и ')}`;
+            }
+            
+            // Формируем полное имя печенья
+            const cookieName = `${baseName} ${sizeName.toLowerCase()} печенье${toppingsText}`;
+            
+            const price = calculateCookiePrice(baseElement.value, sizeElement.value);
             
             const cartItems = document.querySelector('.cart__items');
             if (!cartItems) {
@@ -35,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
             cartItem.innerHTML = `
                 <span class="cart__item-name">${cookieName}</span>
                 <span class="cart__item-quantity">1x</span>
-                <span class="cart__item-price">250₽</span>
+                <span class="cart__item-price">${price}₽</span>
                 <span class="cart__item-remove">&times;</span>
             `;
             
@@ -114,5 +140,37 @@ document.addEventListener('DOMContentLoaded', function() {
         if (totalItems === 0) {
             document.querySelector('.cart__panel').classList.remove('active');
         }
+    }
+    
+    // Функция расчета цены печенья на основе выбранных ингредиентов
+    function calculateCookiePrice(baseType, sizeType) {
+        // Базовая цена для разных основ печенья
+        const basePrices = {
+            'classic': 80,  // Классическая основа
+            'oatmeal': 90,  // Овсяная основа
+            'coconut': 100, // Кокосовая основа
+            'chocolate': 110, // Шоколадная основа
+            'almond': 120   // Миндальная основа
+        };
+        
+        // Коэффициенты размера
+        const sizeCoefficients = {
+            'small': 0.8,  // Маленький размер
+            'medium': 1.0, // Средний размер (стандартный)
+            'large': 1.3   // Большой размер
+        };
+        
+        // Получаем базовую цену в зависимости от типа основы
+        let price = basePrices[baseType] || 80; // По умолчанию 80, если тип не найден
+        
+        // Применяем коэффициент размера
+        price *= sizeCoefficients[sizeType] || 1.0; // По умолчанию 1.0, если размер не найден
+        
+        // Добавляем стоимость за каждый выбранный топпинг
+        const selectedToppings = document.querySelectorAll('input[name="topping"]:checked');
+        price += selectedToppings.length * 15; // Каждый топпинг добавляет 15 рублей
+        
+        // Округляем до целого числа
+        return Math.round(price);
     }
 });
