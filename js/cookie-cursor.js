@@ -2,12 +2,12 @@
 const cookieCursor = {
     // Настройки
     settings: {
-        maxCookies: 7,         // Максимальное количество печенек на экране
-        cookieSize: 24,         // Размер печенек в пикселях
-        fallSpeed: 3,           // Скорость падения
-        cookieLifetime: 2000,   // Время жизни печеньки в миллисекундах
-        spawnDelay: 100,         // Задержка между созданием печенек в миллисекундах
-        container: null          // Контейнер для печенек (будет создан при инициализации)
+        maxCookies: 10,        // Максимальное количество печенек на экране
+        cookieSize: 24,        // Размер печенек в пикселях
+        fallSpeed: 3,          // Скорость падения
+        cookieLifetime: 2000,  // Время жизни печеньки в миллисекундах
+        spawnDelay: 100,       // Задержка между созданием печенек в миллисекундах
+        container: null         // Контейнер для печенек (будет создан при инициализации)
     },
 
     // Массив для хранения активных печенек
@@ -35,6 +35,12 @@ const cookieCursor = {
 
     // Инициализация эффекта
     init: function() {
+        // Удаляем существующий контейнер, если он есть
+        const existingContainer = document.querySelector('.cookie-cursor-container');
+        if (existingContainer) {
+            existingContainer.remove();
+        }
+        
         // Создаем контейнер для печенек
         const container = document.createElement('div');
         container.className = 'cookie-cursor-container';
@@ -45,6 +51,7 @@ const cookieCursor = {
         this.preloadImages();
         
         // Отслеживаем движение мыши
+        this.removeEventListeners();
         document.addEventListener('mousemove', this.handleMouseMove.bind(this));
         
         // Запускаем анимацию
@@ -55,21 +62,22 @@ const cookieCursor = {
     
     // Предзагрузка изображений для избежания проблем с отображением
     preloadImages: function() {
-        // Создаем скрытый контейнер для предзагрузки
-        const preloadContainer = document.createElement('div');
-        preloadContainer.style.position = 'absolute';
-        preloadContainer.style.width = '0';
-        preloadContainer.style.height = '0';
-        preloadContainer.style.overflow = 'hidden';
-        preloadContainer.style.visibility = 'hidden';
-        document.body.appendChild(preloadContainer);
-        
         // Предзагружаем все типы печенек
-        this.cookieTypes.forEach(type => {
-            const img = document.createElement('img');
-            img.src = type;
-            preloadContainer.appendChild(img);
+        this.cookieTypes.forEach(src => {
+            const img = new Image();
+            img.src = src;
         });
+        
+        // Предзагружаем все большие печеньки
+        this.bigCookieTypes.forEach(src => {
+            const img = new Image();
+            img.src = src;
+        });
+    },
+    
+    // Удаление обработчиков событий
+    removeEventListeners: function() {
+        document.removeEventListener('mousemove', this.handleMouseMove);
     },
 
     // Обработчик движения мыши

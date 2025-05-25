@@ -68,7 +68,9 @@
     </style>
     <!-- Отложенная загрузка неприоритетных стилей -->
     <link rel="preload" href="css/style.css?v=1.2" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="css/payment-modal.css?v=1.0" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="css/style.css?v=1.2"></noscript>
+    <noscript><link rel="stylesheet" href="css/payment-modal.css?v=1.0"></noscript>
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Pacifico&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Pacifico&display=swap"></noscript>
     <link rel="preload" href="https://unpkg.com/swiper/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -696,7 +698,147 @@
             <div class="cart__total">
                 <p>Итого: <span class="cart__total-price">0₽</span></p>
             </div>
-            <button class="cart__checkout">Оформить</button>
+            <button class="cart__checkout" id="checkoutBtn">Оформить заказ</button>
+        </div>
+    </div>
+
+    <!-- Payment Modal -->
+    <div class="payment-modal" id="paymentModal">
+        <div class="payment-modal__overlay"></div>
+        <div class="payment-modal__content">
+            <button class="payment-modal__close" aria-label="Закрыть">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            
+            <div class="payment-modal__header">
+                <h2 class="payment-modal__title">Оплата заказа</h2>
+            </div>
+            
+            <div class="payment-modal__body">
+                <div class="payment-modal__summary">
+                    <h3 class="payment-modal__section-title">Ваш заказ</h3>
+                    <div class="payment-modal__items" id="paymentItems"></div>
+                    <div class="payment-modal__total">
+                        <p>Итого: <span id="paymentTotalPrice">0₽</span></p>
+                    </div>
+                </div>
+                
+                <form class="payment-form" id="paymentForm">
+                    <div class="payment-form__section">
+                        <h3 class="payment-form__section-title">Контактная информация</h3>
+                        <div class="payment-form__fields">
+                            <div class="payment-form__field">
+                                <label for="name">Имя</label>
+                                <div class="payment-form__input-wrapper">
+                                    <input type="text" id="name" name="name" required placeholder="Иван Иванов">
+                                </div>
+                            </div>
+                            <div class="payment-form__field">
+                                <label for="phone">Телефон</label>
+                                <div class="payment-form__input-wrapper">
+                                    <input type="tel" id="phone" name="phone" required placeholder="+7 (999) 123-45-67">
+                                </div>
+                            </div>
+                            <div class="payment-form__field">
+                                <label for="email">Email</label>
+                                <div class="payment-form__input-wrapper">
+                                    <input type="email" id="email" name="email" required placeholder="example@mail.ru">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="payment-form__section">
+                        <h3 class="payment-form__section-title">Адрес доставки</h3>
+                        <div class="payment-form__fields">
+                            <div class="payment-form__field">
+                                <label for="address">Адрес</label>
+                                <div class="payment-form__input-wrapper">
+                                    <input type="text" id="address" name="address" required placeholder="ул. Пушкина, д. 10, кв. 5">
+                                </div>
+                            </div>
+                            <div class="payment-form__row">
+                                <div class="payment-form__field">
+                                    <label for="city">Город</label>
+                                    <div class="payment-form__input-wrapper">
+                                        <input type="text" id="city" name="city" required placeholder="Москва">
+                                    </div>
+                                </div>
+                                <div class="payment-form__field">
+                                    <label for="postal">Индекс</label>
+                                    <div class="payment-form__input-wrapper">
+                                        <input type="text" id="postal" name="postal" required placeholder="123456">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="payment-form__section">
+                        <h3 class="payment-form__section-title">Способ оплаты</h3>
+                        <div class="payment-form__methods">
+                            <div class="payment-method">
+                                <input type="radio" id="card" name="paymentMethod" value="card" checked>
+                                <label for="card">
+                                    <div class="payment-method__icon payment-method__icon--card">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="2" y="5" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2"/>
+                                            <path d="M2 10H22" stroke="currentColor" stroke-width="2"/>
+                                            <path d="M6 15H10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                        </svg>
+                                    </div>
+                                    <span>Банковская карта</span>
+                                </label>
+                            </div>
+                            <div class="payment-method">
+                                <input type="radio" id="cash" name="paymentMethod" value="cash">
+                                <label for="cash">
+                                    <div class="payment-method__icon payment-method__icon--cash">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="2" y="6" width="20" height="12" rx="2" stroke="currentColor" stroke-width="2"/>
+                                            <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/>
+                                        </svg>
+                                    </div>
+                                    <span>Наличными при получении</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="payment-form__card-details" id="cardDetails">
+                            <div class="payment-form__field">
+                                <label for="cardNumber">Номер карты</label>
+                                <div class="payment-form__input-wrapper">
+                                    <input type="text" id="cardNumber" name="cardNumber" placeholder="0000 0000 0000 0000">
+                                </div>
+                            </div>
+                            <div class="payment-form__row">
+                                <div class="payment-form__field">
+                                    <label for="cardExpiry">Срок действия</label>
+                                    <div class="payment-form__input-wrapper">
+                                        <input type="text" id="cardExpiry" name="cardExpiry" placeholder="MM/ГГ">
+                                    </div>
+                                </div>
+                                <div class="payment-form__field">
+                                    <label for="cardCvv">CVV</label>
+                                    <div class="payment-form__input-wrapper">
+                                        <input type="password" id="cardCvv" name="cardCvv" placeholder="123">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="payment-form__agree">
+                        <input type="checkbox" id="agree" name="agree" required>
+                        <label for="agree">Я согласен с <a href="#">условиями обработки персональных данных</a></label>
+                    </div>
+                    
+                    <button type="submit" class="payment-form__submit">Оплатить</button>
+                </form>
+            </div>
         </div>
     </div>
 
@@ -708,6 +850,8 @@
             <img class="modal__image" src="" alt="" width="600" height="400">
         </div>
     </div>
+    
+
 
     <!-- Scripts с отложенной загрузкой -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
@@ -715,6 +859,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" defer></script>
     <script src="js/main.js" defer></script>
     <script src="js/cookie-cursor.js" defer></script>
+    <script src="js/custom-cookie.js" defer></script>
+    <script src="js/payment.js" defer></script>
     <!-- Footer Section -->
     <footer class="footer">
         <div class="container">
@@ -730,7 +876,7 @@
                 <div class="footer__contacts">
                     <h3 class="footer__heading">Контакты</h3>
                     <a href="tel:+79991234567" class="footer__link footer__link--phone">+7 999 123-45-67</a>
-                    <a href="mailto:info@crumblecookies.ru" class="footer__link footer__link--email">info@crumblecookies.ru</a>
+                    <a href="mailto:infocrumblecookies@mail.ru" class="footer__link footer__link--email">infocrumblecookies@mail.ru</a>
                     <address class="footer__address">
                         <span class="footer__map-marker"></span>
                         <span>Москва, ул. Сладкая, д. 15</span>

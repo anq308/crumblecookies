@@ -1405,11 +1405,15 @@ section {
     overflow: hidden;
     transition: all 0.5s ease;
     background-color: rgba(245, 193, 7, 0.05);
+    opacity: 0;
+    visibility: hidden;
 }
 
 .faq__item.active .faq__answer {
     padding: 20px;
     max-height: 1000px;
+    opacity: 1;
+    visibility: visible;
 }
 
 .faq__answer p {
@@ -1568,14 +1572,14 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 1000;
+    z-index: 999;
     opacity: 0;
     visibility: hidden;
-    transition: opacity var(--transition-medium), visibility var(--transition-medium);
+    transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
 .modal.active {
@@ -1584,35 +1588,267 @@ section {
 }
 
 .modal__content {
-    position: relative;
-    max-width: 90%;
-    max-height: 90%;
     background-color: var(--color-white);
     border-radius: 10px;
-    overflow: hidden;
-    transform: scale(0.9);
-    transition: transform var(--transition-medium);
+    max-width: 800px;
+    width: 90%;
+    position: relative;
+    padding: 20px;
+    transform: translateY(-20px);
+    transition: transform 0.3s ease;
+    max-height: 80vh;
+    overflow-y: auto;
 }
 
 .modal.active .modal__content {
-    transform: scale(1);
+    transform: translateY(0);
 }
 
 .modal__close {
     position: absolute;
     top: 10px;
-    right: 10px;
-    font-size: 30px;
-    color: var(--color-white);
+    right: 15px;
+    font-size: 24px;
     cursor: pointer;
     z-index: 10;
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    color: var(--color-text);
 }
 
 .modal__image {
-    display: block;
     max-width: 100%;
-    max-height: 80vh;
+    border-radius: 5px;
+}
+
+/* Payment Modal */
+.payment-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+}
+
+.payment-modal.active {
+    display: block;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.payment-modal__content {
+    position: relative;
+    background-color: #fff;
+    margin: 2% auto;
+    max-width: 900px;
+    width: 90%;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border: none;
+    animation: slideIn 0.4s ease-in-out;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.payment-modal__close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--color-secondary);
+    cursor: pointer;
+    transition: all 0.2s;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.payment-modal__close:hover {
+    color: var(--color-primary);
+    background-color: rgba(239, 166, 166, 0.2);
+    transform: rotate(90deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* payment-form styles moved to payment-modal.css */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@media (max-width: 768px) {
+    .payment-modal__content {
+        padding: 25px;
+        width: 95%;
+        margin: 5% auto;
+    }
+    
+    .payment-form__row,
+    .payment-form__methods {
+        grid-template-columns: 1fr;
+    }
+    
+    .payment-modal__title {
+        font-size: 24px;
+    }
+    
+    .payment-form__section {
+        padding: 20px;
+    }
+}
+
+.payment-details h3, 
+.payment-methods h3,
+.customer-info h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: var(--color-dark);
+}
+
+.order-summary {
+    margin-bottom: 15px;
+}
+
+.payment-order-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.order-total {
+    text-align: right;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.payment-method {
+    margin-bottom: 10px;
+}
+
+.payment-method label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.payment-method input[type="radio"] {
+    margin-right: 10px;
+    accent-color: var(--color-primary);
+}
+
+.payment-card-details {
+    display: grid;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: var(--color-dark);
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 15px;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: var(--color-primary);
+    outline: none;
+    box-shadow: 0 0 5px rgba(245, 193, 7, 0.5);
+}
+
+.payment-submit {
+    background: linear-gradient(to right, var(--color-primary), var(--color-secondary));
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+.payment-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 /* Animations */

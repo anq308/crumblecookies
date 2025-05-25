@@ -124,12 +124,13 @@ document.addEventListener('DOMContentLoaded', function() {
     // Cart functionality
     const cartButton = document.querySelector('.cart__button');
     const cartPanel = document.querySelector('.cart__panel');
-    const addToCartButtons = document.querySelectorAll('.flavor-card__button');
+    const checkoutBtn = document.getElementById('checkoutBtn');
+    const paymentModal = document.getElementById('paymentModal');
+    const paymentModalClose = paymentModal?.querySelector('.modal__close');
     
     if (cartButton && cartPanel) {
         cartButton.addEventListener('click', toggleCart);
         
-        // Close cart when clicking outside
         document.addEventListener('click', function(event) {
             if (!cartPanel.contains(event.target) && !cartButton.contains(event.target) && cartPanel.classList.contains('active')) {
                 cartPanel.classList.remove('active');
@@ -137,9 +138,42 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    if (addToCartButtons) {
-        addToCartButtons.forEach(button => {
-            button.addEventListener('click', addToCart);
+    // Удаляем старые обработчики, чтобы избежать дублирования
+    document.querySelectorAll('.flavor-card__button').forEach(button => {
+        button.removeEventListener('click', addToCart);
+        // Добавляем новый обработчик
+        button.addEventListener('click', addToCart, { once: false });
+    });
+    
+    document.querySelectorAll('.cookie-month__button').forEach(button => {
+        // Удаляем все обработчики с кнопки
+        const newButton = button.cloneNode(true);
+        button.parentNode.replaceChild(newButton, button);
+        
+        // Добавляем новый обработчик
+        newButton.addEventListener('click', function() {
+            const flavorName = this.getAttribute('data-name');
+            const price = parseInt(this.getAttribute('data-price'));
+            addToCartSpecial(flavorName, price);
+        }, { once: false });
+    });
+    
+    // Добавляем обработчик для кнопки оформления заказа
+    if (checkoutBtn) {
+        checkoutBtn.addEventListener('click', openPaymentModal);
+    }
+    
+    // Закрытие модального окна оплаты
+    if (paymentModalClose) {
+        paymentModalClose.addEventListener('click', function() {
+            paymentModal.classList.remove('active');
+        });
+        
+        // Закрытие по клику вне содержимого
+        paymentModal.addEventListener('click', function(event) {
+            if (event.target === paymentModal) {
+                paymentModal.classList.remove('active');
+            }
         });
     }
 
@@ -224,16 +258,18 @@ document.addEventListener('DOMContentLoaded', function() {
             const question = item.querySelector('.faq__question');
             
             if (question) {
-                question.addEventListener('click', () => {
-                    // Close all other items
+                question.addEventListener('click', function() {
+                    const isActive = item.classList.contains('active');
+                    
                     faqItems.forEach(otherItem => {
-                        if (otherItem !== item && otherItem.classList.contains('active')) {
-                            otherItem.classList.remove('active');
-                        }
+                        otherItem.classList.remove('active');
                     });
                     
-                    // Toggle current item
-                    item.classList.toggle('active');
+                    if (!isActive) {
+                        setTimeout(() => {
+                            item.classList.add('active');
+                        }, 10);
+                    }
                 });
             }
         });
@@ -265,23 +301,7 @@ document.addEventListener('DOMContentLoaded', function() {
         setInterval(updateCountdown, 60000);
     }
     
-    // Старый код для добавления печенья месяца в корзину - теперь обрабатывается выше
-    // Слушаем событие monthlyAdd для обратной совместимости
-    document.addEventListener('monthlyAdd', function(e) {
-        const detail = e.detail;
-        addToCartSpecial(detail.name, detail.price);
-    });
-    
-    // Добавляем обработчик для кнопки Cookie of the Month для обратной совместимости
-    const cookieMonthButtonLegacy = document.querySelector('.cookie-month-button');
-    if (cookieMonthButtonLegacy) {
-        cookieMonthButtonLegacy.addEventListener('click', function() {
-            this.textContent = 'Добавлено!';
-            setTimeout(() => {
-                this.textContent = 'Добавить в корзину';
-            }, 2000);
-        });
-    }
+    // Убираем старый код, чтобы избежать дублирования функционала
 
     // Cookie Customizer Functionality
     const initCustomizer = () => {
@@ -481,8 +501,9 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
         
-        // Add to cart button
-        addToCartButton.addEventListener('click', function() {
+
+        const dummyButton = document.createElement('button');
+        dummyButton.addEventListener('click', function() {
             const baseNames = {
                 classic: 'Классическая',
                 oatmeal: 'Овсяная',
@@ -517,16 +538,16 @@ document.addEventListener('DOMContentLoaded', function() {
             
             const cookieName = `${baseName} ${sizeName} печенье${toppingsText}`;
             
-            // Calculate price
+            // Рассчитываем цену
             const basePrice = prices.base[currentState.base];
             const toppingsPrice = currentState.toppings.reduce((sum, topping) => sum + (prices.topping[topping] || 0), 0);
             const sizeMultiplier = prices.size[currentState.size];
             const totalPrice = Math.round((basePrice + toppingsPrice) * sizeMultiplier);
             
-            // Add to cart
-            addToCart(null, cookieName, totalPrice);
+            // Добавляем в корзину
+            addToCartSpecial(cookieName, totalPrice);
             
-            // Visual feedback
+            // Визуальная обратная связь
             this.textContent = 'Добавлено!';
             setTimeout(() => {
                 updateDescription();
@@ -557,7 +578,6 @@ document.addEventListener('DOMContentLoaded', function() {
         updatePreview();
     };
     
-    // Initialize customizer if it exists on the page
     if (document.querySelector('.cookie-customizer')) {
         initCustomizer();
     }
@@ -694,9 +714,9 @@ function toggleCart() {
 function addToCart() {
     const flavorCard = this.closest('.flavor-card');
     const flavorName = flavorCard.querySelector('.flavor-card__title').textContent;
-    const price = 150; // Price per cookie in rubles
+    const priceData = parseInt(this.getAttribute('data-price')) || 150;
     
-    addToCartSpecial(flavorName, price, flavorCard);
+    addToCartSpecial(flavorName, priceData, flavorCard);
 }
 
 // Add special item to cart (like Cookie of the Month)
@@ -713,10 +733,9 @@ function addToCartSpecial(flavorName, price, parentElement = null) {
     });
     
     if (existingItem) {
-        // Increase quantity if item exists
-        const quantityElement = existingItem.querySelector('.cart__item-quantity');
-        let quantity = parseInt(quantityElement.textContent.split('x')[0]) + 1;
-        quantityElement.textContent = `${quantity}x`;
+        // Если товар уже есть, не увеличиваем количество,
+        // а показываем уведомление, что товар уже в корзине
+        alert(`${flavorName} уже в корзине`);
     } else {
         // Create new item if it doesn't exist
         const cartItem = document.createElement('div');
@@ -817,6 +836,89 @@ function addToCartSpecial(flavorName, price, parentElement = null) {
 }
 
 // Update cart total
+// Функция для открытия модального окна оплаты
+function openPaymentModal() {
+    const paymentModal = document.getElementById('paymentModal');
+    const orderSummary = paymentModal.querySelector('.order-summary');
+    const paymentTotalPrice = paymentModal.querySelector('.payment-total-price');
+    const cartItems = document.querySelectorAll('.cart__item');
+    const cartTotalPrice = document.querySelector('.cart__total-price');
+    
+    // Очищаем содержимое суммарного блока
+    orderSummary.innerHTML = '';
+    
+    // Заполняем данными из корзины
+    cartItems.forEach(item => {
+        const name = item.querySelector('.cart__item-name').textContent;
+        const quantity = item.querySelector('.cart__item-quantity').textContent;
+        const price = item.querySelector('.cart__item-price').textContent;
+        
+        const orderItem = document.createElement('div');
+        orderItem.classList.add('payment-order-item');
+        orderItem.innerHTML = `
+            <div>${name} (${quantity})</div>
+            <div>${price}</div>
+        `;
+        
+        orderSummary.appendChild(orderItem);
+    });
+    
+    // Устанавливаем итоговую сумму
+    paymentTotalPrice.textContent = cartTotalPrice.textContent;
+    
+    // Показываем модальное окно
+    paymentModal.classList.add('active');
+    
+    // Обработчик оплаты
+    const paymentSubmitButton = paymentModal.querySelector('.payment-submit');
+    if (paymentSubmitButton) {
+        paymentSubmitButton.onclick = function() {
+            alert('Спасибо за заказ! Мы свяжемся с вами в ближайшее время.');
+            paymentModal.classList.remove('active');
+            
+            // Очистка корзины после оплаты
+            const cartItems = document.querySelector('.cart__items');
+            cartItems.innerHTML = '';
+            updateCartTotal();
+        };
+    }
+    
+    // Обработчики для полей формы
+    const cardNumberInput = paymentModal.querySelector('.card-number');
+    if (cardNumberInput) {
+        cardNumberInput.addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, '');
+            let formattedValue = '';
+            
+            for (let i = 0; i < value.length; i++) {
+                if (i > 0 && i % 4 === 0) {
+                    formattedValue += ' ';
+                }
+                formattedValue += value[i];
+            }
+            
+            e.target.value = formattedValue;
+        });
+    }
+    
+    const cardExpiryInput = paymentModal.querySelector('.card-expiry');
+    if (cardExpiryInput) {
+        cardExpiryInput.addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, '');
+            let formattedValue = '';
+            
+            if (value.length > 0) {
+                formattedValue = value.substring(0, 2);
+                if (value.length > 2) {
+                    formattedValue += '/' + value.substring(2, 4);
+                }
+            }
+            
+            e.target.value = formattedValue;
+        });
+    }
+}
+
 function updateCartTotal() {
     const cartItems = document.querySelectorAll('.cart__item');
     const cartCounter = document.querySelector('.cart__counter');
@@ -824,11 +926,13 @@ function updateCartTotal() {
     
     let totalItems = 0;
     let totalPrice = 0;
-    const price = 150; // Price per cookie in rubles
     
     cartItems.forEach(item => {
         const quantityText = item.querySelector('.cart__item-quantity').textContent;
         const quantity = parseInt(quantityText.split('x')[0]);
+        const priceText = item.querySelector('.cart__item-price').textContent;
+        const price = parseInt(priceText);
+        
         totalItems += quantity;
         totalPrice += quantity * price;
     });
@@ -836,7 +940,6 @@ function updateCartTotal() {
     cartCounter.textContent = totalItems;
     cartTotalPrice.textContent = `${totalPrice}₽`;
     
-    // Hide cart panel if empty
     if (totalItems === 0) {
         document.querySelector('.cart__panel').classList.remove('active');
     }
